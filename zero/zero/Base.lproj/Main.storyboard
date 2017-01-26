@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="-210.40000000000001" y="123.68815592203899"/>
         </scene>
-        <!--Map View Controller-->
+        <!--View Controller-->
         <scene sceneID="ph3-5i-JJN">
             <objects>
-                <viewController id="vmM-ms-nxg" customClass="MapViewController" sceneMemberID="viewController">
+                <viewController id="vmM-ms-nxg" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OTm-Oz-W3M"/>
                         <viewControllerLayoutGuide type="bottom" id="4Kd-ll-0Ol"/>
@@ -78,10 +78,13 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="SP6-h5-2A5" id="J31-5G-ZvU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BlJ-I5-8KS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="869.60000000000002" y="123.68815592203899"/>
+            <point key="canvasLocation" x="702" y="124"/>
         </scene>
     </scenes>
 </document>
