@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 
+//testing
+//@import Mapbox;
+
 @interface ViewController ()
 
 @end
@@ -17,6 +20,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+//    [super viewDidLoad];
+//
+//    MGLMapView *mapView = [[MGLMapView alloc] initWithFrame:self.view.bounds];
+//
+//    mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+//
+//    // Set the map’s center coordinate and zoom level.
+//    [mapView setCenterCoordinate:CLLocationCoordinate2DMake(59.31, 18.06)
+//                       zoomLevel:9
+//                        animated:NO];
+//
+//    [self.view addSubview:mapView];
 }
 
 

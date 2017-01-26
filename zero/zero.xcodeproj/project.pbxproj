@@ -24,6 +24,8 @@
 		A4D6447B1E38A2D4001BCA5C /* zero.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D6447A1E38A2D4001BCA5C /* zero.m */; };
 		A4D6447D1E39CEA1001BCA5C /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D6447C1E39CEA1001BCA5C /* Mapbox.framework */; };
 		A4D6447E1E39CEA1001BCA5C /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4D6447C1E39CEA1001BCA5C /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A4D644821E39D6D1001BCA5C /* GetStartedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D644811E39D6D1001BCA5C /* GetStartedViewController.m */; };
+		A4D644851E39D70B001BCA5C /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D644841E39D70B001BCA5C /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,10 @@
 		A4D644791E38A2D4001BCA5C /* zero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zero.h; sourceTree = "<group>"; };
 		A4D6447A1E38A2D4001BCA5C /* zero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zero.m; sourceTree = "<group>"; };
 		A4D6447C1E39CEA1001BCA5C /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		A4D644801E39D6D1001BCA5C /* GetStartedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetStartedViewController.h; sourceTree = "<group>"; };
+		A4D644811E39D6D1001BCA5C /* GetStartedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetStartedViewController.m; sourceTree = "<group>"; };
+		A4D644831E39D70B001BCA5C /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		A4D644841E39D70B001BCA5C /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +216,10 @@
 		A4D644771E38A264001BCA5C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A4D644801E39D6D1001BCA5C /* GetStartedViewController.h */,
+				A4D644811E39D6D1001BCA5C /* GetStartedViewController.m */,
+				A4D644831E39D70B001BCA5C /* MapViewController.h */,
+				A4D644841E39D70B001BCA5C /* MapViewController.m */,
 				A4D6443A1E38A1DC001BCA5C /* ViewController.h */,
 				A4D6443B1E38A1DC001BCA5C /* ViewController.m */,
 			);
@@ -366,7 +376,9 @@
 				A4D6443C1E38A1DC001BCA5C /* ViewController.m in Sources */,
 				A4D6447B1E38A2D4001BCA5C /* zero.m in Sources */,
 				A4D644391E38A1DC001BCA5C /* AppDelegate.m in Sources */,
+				A4D644851E39D70B001BCA5C /* MapViewController.m in Sources */,
 				A4D644361E38A1DC001BCA5C /* main.m in Sources */,
+				A4D644821E39D6D1001BCA5C /* GetStartedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
