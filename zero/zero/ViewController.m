@@ -6,6 +6,18 @@
 //  Copyright © 2017 Cyrus Goh. All rights reserved.
 //
 
+
+/**
+ 
+ 1.
+ https://www.mapbox.com/ios-sdk/#telemetry_opt_out
+
+ Integrate the setting directly into your app. Hook a UISwitch control up to the MGLMapboxMetricsEnabled Boolean user default, which should be YES by default. Then set MGLMapboxMetricsEnabledSettingShownInApp to YES in your app’s Info.plist file.
+ 
+ 
+ 2. CMD + Shift + K to clean the project
+**/
+
 #import "ViewController.h"
 @import Mapbox;
 
@@ -32,9 +44,9 @@
     // create annotation and assign it to local variable point
     MGLPointAnnotation *point = [[MGLPointAnnotation alloc] init];
     // give the point annotation a coordinate
-    point.coordinate = CLLocationCoordinate2DMake(45.52258, -122.6732);
-    point.title = @"Voodoo Doughnut";
-    point.subtitle = @"22 SW 3rd Avenue Portland Oregon, U.S.A.";
+    point.coordinate = CLLocationCoordinate2DMake(37.369168, -122.038412);
+    point.title = @"Chick-fil-A";
+    point.subtitle = @"550 W El Camino Real, Sunnyvale, CA 94087";
 
     // add the annotation to the map view
     [self.mapView addAnnotation:point];
@@ -60,9 +72,6 @@
 
 
 /*
- 
-
-
 
      [super viewDidLoad];
  

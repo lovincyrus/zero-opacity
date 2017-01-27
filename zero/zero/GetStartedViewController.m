@@ -7,6 +7,7 @@
 //
 
 #import "GetStartedViewController.h"
+//#import "MapViewController.m"
 
 @interface GetStartedViewController ()
 
@@ -53,11 +54,11 @@
     // ensure the correct segue to fire
     if([segue.identifier isEqualToString:@"openMapSegue"])
         // ensure the correct destination class
-        if([segue.destinationViewController isMemberOfClass:[MapViewController class]]){
+        if([segue.destinationViewController isMemberOfClass:[UIViewController class]]){
             // cast destination class to be B
-            MapViewController* bvc = (MapViewController*)segue.destinationViewController;
+//            UIViewController* bvc = (UIViewController*)segue.destinationViewController;
             // info passing from A to B
-            bvc.backgroundColor = ((UIButton*)sender).backgroundColor;
+//            bvc.backgroundColor = ((UIButton*)sender).backgroundColor;
             //bvc.navTitle = ((UIButton*)sender).currentTitle;
         }
 
