@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A473CA201E3B334900E7E60C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A473CA1F1E3B334900E7E60C /* Settings.bundle */; };
+		A4C00B451E3C160A009DFA90 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C00B441E3C160A009DFA90 /* PageContentViewController.m */; };
 		A4D644361E38A1DC001BCA5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D644351E38A1DC001BCA5C /* main.m */; };
 		A4D644391E38A1DC001BCA5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D644381E38A1DC001BCA5C /* AppDelegate.m */; };
 		A4D6443C1E38A1DC001BCA5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D6443B1E38A1DC001BCA5C /* ViewController.m */; };
@@ -97,6 +98,8 @@
 
 /* Begin PBXFileReference section */
 		A473CA1F1E3B334900E7E60C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		A4C00B431E3C160A009DFA90 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
+		A4C00B441E3C160A009DFA90 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
 		A4D644311E38A1DC001BCA5C /* zero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D644351E38A1DC001BCA5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4D644371E38A1DC001BCA5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -237,6 +240,8 @@
 				A4D644811E39D6D1001BCA5C /* GetStartedViewController.m */,
 				A4D644831E39D70B001BCA5C /* MapViewController.h */,
 				A4D644841E39D70B001BCA5C /* MapViewController.m */,
+				A4C00B431E3C160A009DFA90 /* PageContentViewController.h */,
+				A4C00B441E3C160A009DFA90 /* PageContentViewController.m */,
 				A4D6443A1E38A1DC001BCA5C /* ViewController.h */,
 				A4D6443B1E38A1DC001BCA5C /* ViewController.m */,
 			);
@@ -394,6 +399,7 @@
 			files = (
 				A4D6443C1E38A1DC001BCA5C /* ViewController.m in Sources */,
 				A4D6447B1E38A2D4001BCA5C /* zero.m in Sources */,
+				A4C00B451E3C160A009DFA90 /* PageContentViewController.m in Sources */,
 				A4D644391E38A1DC001BCA5C /* AppDelegate.m in Sources */,
 				A4D644851E39D70B001BCA5C /* MapViewController.m in Sources */,
 				A4D644361E38A1DC001BCA5C /* main.m in Sources */,

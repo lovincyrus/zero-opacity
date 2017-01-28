@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PageContentViewController.h"
 
-@interface ViewController : UIViewController
 
+// to make UIPageViewController work, we must adopt <>
+@interface ViewController : UIViewController <UIPageViewControllerDataSource>
+
+
+// pagecontentview
+- (IBAction)startWalkthrough:(id)sender;
+@property (strong, nonatomic) UIPageViewController *pageViewController;
+@property (strong, nonatomic) NSArray *pageTitles;
 
 @end
 

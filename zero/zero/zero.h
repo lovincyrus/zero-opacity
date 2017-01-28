@@ -1,5 +1,3 @@
-// template comment
-
 /********************************/
 // CS63A - Winter 2017
 // HW1: Milestone 1

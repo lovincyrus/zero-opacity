@@ -6,7 +6,9 @@
 //  Copyright © 2017 Cyrus Goh. All rights reserved.
 //
 
+#import "PageContentViewController.h"
 #import "GetStartedViewController.h"
+#import "ViewController.h"
 //#import "MapViewController.m"
 
 @interface GetStartedViewController ()
@@ -15,40 +17,50 @@
 
 @implementation GetStartedViewController
 
+//@synthesize PageViewController,arrPageTitles;
+
 // Do any additional setup after loading the view.
 - (void)viewDidLoad {
-    [super viewDidLoad];
     NSLog(@"viewDidLoad GetStartedVC");
+
+//    [super viewDidLoad];
+//    // Create the data model
+//    _pageTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip", @"Free Regular Update"];
+//
+//    // Create page view controller
+//    self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
+//    self.pageViewController.dataSource = self;
+//
+//    PageContentViewController *startingViewController = [self viewControllerAtIndex:0];
+//    NSArray *viewControllers = @[startingViewController];
+//    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+//
+//    // Change the size of page view controller
+//    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 30);
+//
+//    [self addChildViewController:_pageViewController];
+//    [self.view addSubview:_pageViewController.view];
+//    [self.pageViewController didMoveToParentViewController:self];
 }
+
+
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-//openMapSegue
 
-/*
+
+
+
+
+// openMapSegue
 #pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- if([segue.identifier isEqualToString:@"openMapSegue"])
- if([segue.destinationViewController isMemberOfClass:[MapViewController class]]){
- MapViewController* bvc = (MapViewController*)segue.destinationViewController;
- //bvc.backgroundColor = ((UIButton*)sender).backgroundColor;
- //bvc.navTitle = ((UIButton*)sender).currentTitle;
- }
-
- }
-
-*/
-
 // setting up segue from GetStartedVC to MapVC
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // ensure the correct segue to fire
@@ -64,12 +76,8 @@
 
 }
 
-//- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier
-//                                  sender:(id)sender{
-//    if ([segue.identifier isEqualToString:@"openMagSegue"])
-//        return [self] ? YES : NO;
-//    else
-//        return NO;
-//}
+
+
+
 
 @end

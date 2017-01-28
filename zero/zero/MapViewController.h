@@ -10,4 +10,8 @@
 
 @interface MapViewController : UIViewController
 
+// mapview
+@property (nonatomic, assign) BOOL showsUserLocation;
+
+
 @end

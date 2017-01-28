@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GetStartedViewController.h"
 
 @interface GetStartedViewController : UIViewController
+
+// pagecontentview
+//- (IBAction)startWalkthrough:(id)sender;
+//@property (strong, nonatomic) UIPageViewController *pageViewController;
+//@property (strong, nonatomic) NSArray *pageTitles;
 
 @end
