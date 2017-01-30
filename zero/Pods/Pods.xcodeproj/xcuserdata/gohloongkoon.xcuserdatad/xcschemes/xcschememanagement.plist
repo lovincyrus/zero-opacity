@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>MapboxDirections.swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-zero WatchKit App.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-zero WatchKit Extension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-zero.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Polyline.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>47452CF502ADAB7F58D5299F34906559</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5379042F8018126384950303E49ADC83</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5F9D7AEA859182383297E87060A3FBF7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C81B445BD3FB385E7EE379461932C215</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C958C92B3023C9D5259FC112C79C4ED0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

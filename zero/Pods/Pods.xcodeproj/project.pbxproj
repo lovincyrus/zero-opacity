@@ -1,0 +1,991 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		078EB2562716B0319666500A17A2CDE5 /* Polyline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25D2D88371F7F295DD3369EFED40700 /* Polyline.framework */; };
+		154D9B1D382F213487BB121D8096BADB /* Pods-zero-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9B15195C82931704D8B1721A7B7C2D /* Pods-zero-dummy.m */; };
+		18B6124D6E276AA1ED0C2DEBBE4F48AE /* MBRouteOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1031192A0E74242845278138F1C7CA9D /* MBRouteOptions.swift */; };
+		2C39800F4B86D4A1D8D918D2750F81B0 /* MBRouteStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27354CA8D3ABA8565A2B2F83040AB1 /* MBRouteStep.swift */; };
+		303E21D5AE245BFAACEDC2516C7450A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D566ABCB2F93AE0505CAA26658A047BA /* Foundation.framework */; };
+		3A6F5C5E1E61F3C4F05A04C80C5E60C2 /* Polyline-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A8DB1DF729D9333ED6DBC6119FA9AB /* Polyline-dummy.m */; };
+		4303EACA116F8F3D4E0345EB78C22C11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D566ABCB2F93AE0505CAA26658A047BA /* Foundation.framework */; };
+		43130B958B55B322894CE4B85E633E29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C809CAA7D0527D3A9AF9EDB4B4F00F2 /* Foundation.framework */; };
+		4788EE8C41FE4A6AAFDE26B92062E42E /* MBRouteLeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B14FB49F825C33AA1A9898A79D41C8A /* MBRouteLeg.swift */; };
+		578BF8DD48D47F3F1A0CC39F116F9A41 /* MapboxDirections.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B63E0EDD77A5AB5E608CB2357D6F2659 /* MapboxDirections.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		679973434D07B6A21D8929326CC4B847 /* Pods-zero-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7150CEF029D46CAC35215DEAFA379DA0 /* Pods-zero-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0727A400467586663F4B11D7C19208 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C809CAA7D0527D3A9AF9EDB4B4F00F2 /* Foundation.framework */; };
+		737A1C4C5F9E3FABFFC3EDF954187B6B /* MBDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2078D9B1A10CDB623EB9BC29115DF73 /* MBDirections.swift */; };
+		85E6C060A935A8B838580336E0F35563 /* MBRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BD93C56EC2A27219EBD6C288B57C33 /* MBRoute.swift */; };
+		865CE93C9BB25EC306CFC0205B3B3B49 /* Polyline-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6501DEAB4C0CF726D0E9AAABB75ABE61 /* Polyline-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89C9CD45C6085D511FE3F15C7A0CD7A6 /* Pods-zero WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 507FC18AF59E5A92B3E2783DF3D54552 /* Pods-zero WatchKit App-dummy.m */; };
+		9B234AC9C6648C986A5342D34397052D /* MapboxDirections.h in Headers */ = {isa = PBXBuildFile; fileRef = A9CFE479DF6A7A56AF7904DB07951BB7 /* MapboxDirections.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2177A89D84D9D5C961339B4E3D689FD /* Pods-zero WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D39590D5942A68515EB8581E9648BCC8 /* Pods-zero WatchKit Extension-dummy.m */; };
+		CB91BECC1A52859397FEAD4C398635C4 /* MapboxDirections.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8232D1B1325A655173DBC4DC6BF954 /* MapboxDirections.swift-dummy.m */; };
+		E1F58BDCA1F9292C024FB504390E847F /* Polyline.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AC356B386EA0B9EAAA8E89DCA7F2F85 /* Polyline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED6695277F36598DC6CF412AC278D80C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C809CAA7D0527D3A9AF9EDB4B4F00F2 /* Foundation.framework */; };
+		EEE5F192737DE585298320A690F69419 /* MBWaypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4F485141E5AD11097322E481BD0E0A /* MBWaypoint.swift */; };
+		F3FA5D9685FEF803FB3F7FA057FA3A9A /* Polyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4012DD47AF8964D592C8FAC513A32F4E /* Polyline.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02F5FCA8B04864934845F8582083E637 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5379042F8018126384950303E49ADC83;
+			remoteInfo = Polyline;
+		};
+		11F586F0376455894F8D92CA80FF9415 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C958C92B3023C9D5259FC112C79C4ED0;
+			remoteInfo = MapboxDirections.swift;
+		};
+		9C3E36008243DB6BF5BFC992F39C6444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5379042F8018126384950303E49ADC83;
+			remoteInfo = Polyline;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09E0931BEC4D47E973BEBCDC2FD104DC /* Pods-zero WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-zero WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		0BD7667A96FDE2632DFA38FBFEDE63E2 /* Pods-zero-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-zero-frameworks.sh"; sourceTree = "<group>"; };
+		0E4F485141E5AD11097322E481BD0E0A /* MBWaypoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBWaypoint.swift; path = MapboxDirections/MBWaypoint.swift; sourceTree = "<group>"; };
+		1031192A0E74242845278138F1C7CA9D /* MBRouteOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRouteOptions.swift; path = MapboxDirections/MBRouteOptions.swift; sourceTree = "<group>"; };
+		1098FDA52964DC0C2BCA8A364AB4D8AC /* Pods-zero-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-zero-acknowledgements.markdown"; sourceTree = "<group>"; };
+		17E1000B9307EC67B08CD78142831754 /* Pods-zero WatchKit Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-zero WatchKit Extension-frameworks.sh"; sourceTree = "<group>"; };
+		207434C308FF38A10552B2830C3E8888 /* Pods-zero WatchKit App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-zero WatchKit App-resources.sh"; sourceTree = "<group>"; };
+		34B27D2CA2A12CAA8A3ED912847C74B9 /* Pods-zero WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-zero WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4012DD47AF8964D592C8FAC513A32F4E /* Polyline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Polyline.swift; path = Polyline/Polyline.swift; sourceTree = "<group>"; };
+		4C809CAA7D0527D3A9AF9EDB4B4F00F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4D6B2036B65A5E1719A2A974953AA2EB /* Polyline.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Polyline.modulemap; sourceTree = "<group>"; };
+		507FC18AF59E5A92B3E2783DF3D54552 /* Pods-zero WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-zero WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		58153F40E6172D1335C980DE48D48A03 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F9B15195C82931704D8B1721A7B7C2D /* Pods-zero-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-zero-dummy.m"; sourceTree = "<group>"; };
+		60B985F41128315B47E14E853B0D9B4A /* Pods-zero WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-zero WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		620204E35BC6D2F987B215163334835A /* Pods-zero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-zero.debug.xcconfig"; sourceTree = "<group>"; };
+		6501DEAB4C0CF726D0E9AAABB75ABE61 /* Polyline-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Polyline-umbrella.h"; sourceTree = "<group>"; };
+		69CD49F9BB678B5A5E3A49FF41D2BD62 /* Pods-zero-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-zero-acknowledgements.plist"; sourceTree = "<group>"; };
+		6B14FB49F825C33AA1A9898A79D41C8A /* MBRouteLeg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRouteLeg.swift; path = MapboxDirections/MBRouteLeg.swift; sourceTree = "<group>"; };
+		7150CEF029D46CAC35215DEAFA379DA0 /* Pods-zero-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-zero-umbrella.h"; sourceTree = "<group>"; };
+		7EF0AB0FB58CF85F7EC6900C2DF16BC1 /* Pods_zero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_zero.framework; path = "Pods-zero.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FB63A7BC463438FF506A78CF6BC9686 /* libPods-zero WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-zero WatchKit App.a"; path = "libPods-zero WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A8DB1DF729D9333ED6DBC6119FA9AB /* Polyline-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Polyline-dummy.m"; sourceTree = "<group>"; };
+		8557E8409FD3FB4BA8477EC13AF3374C /* Pods-zero WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-zero WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		90A92C5599385932A1AD41CD3DA310DC /* Polyline-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Polyline-prefix.pch"; sourceTree = "<group>"; };
+		935DE3375493945B14B86C104A5C1821 /* Pods-zero WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-zero WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93F88D5972ACA1298417F44740DA4D2E /* Pods-zero WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-zero WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		968CF8805851A3D479E744A6A1B6AFA3 /* Pods-zero WatchKit App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-zero WatchKit App-frameworks.sh"; sourceTree = "<group>"; };
+		9AC356B386EA0B9EAAA8E89DCA7F2F85 /* Polyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Polyline.h; path = Polyline/Polyline.h; sourceTree = "<group>"; };
+		9CBCA2A54AE0808F17797A3D75DEAD99 /* Pods-zero WatchKit Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-zero WatchKit Extension-resources.sh"; sourceTree = "<group>"; };
+		9EAB057C7501106679C00D5F3A6B5569 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2078D9B1A10CDB623EB9BC29115DF73 /* MBDirections.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBDirections.swift; path = MapboxDirections/MBDirections.swift; sourceTree = "<group>"; };
+		A6DAE71EF618B4128D300CA95FA2440C /* MapboxDirections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MapboxDirections.framework; path = MapboxDirections.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9CFE479DF6A7A56AF7904DB07951BB7 /* MapboxDirections.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MapboxDirections.h; path = MapboxDirections/MapboxDirections.h; sourceTree = "<group>"; };
+		AD8232D1B1325A655173DBC4DC6BF954 /* MapboxDirections.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MapboxDirections.swift-dummy.m"; sourceTree = "<group>"; };
+		B5A6021EBADE2420EE38B37613CF1882 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B63E0EDD77A5AB5E608CB2357D6F2659 /* MapboxDirections.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxDirections.swift-umbrella.h"; sourceTree = "<group>"; };
+		BA27354CA8D3ABA8565A2B2F83040AB1 /* MBRouteStep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRouteStep.swift; path = MapboxDirections/MBRouteStep.swift; sourceTree = "<group>"; };
+		C2A111F511DC047B5FCF988B087484A2 /* libPods-zero WatchKit Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-zero WatchKit Extension.a"; path = "libPods-zero WatchKit Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE150EB6F246C5FE9FD5FC5AACDBA0FB /* Pods-zero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-zero.release.xcconfig"; sourceTree = "<group>"; };
+		CF92D52A51444CE366A9A3AC5073C26D /* MapboxDirections.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MapboxDirections.swift.modulemap; sourceTree = "<group>"; };
+		D14C8E8F064DD43DB6281068F00F9FE9 /* MapboxDirections.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxDirections.swift.xcconfig; sourceTree = "<group>"; };
+		D39590D5942A68515EB8581E9648BCC8 /* Pods-zero WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-zero WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		D566ABCB2F93AE0505CAA26658A047BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D815D7B218FD19B58A6424B7AF4021BB /* Pods-zero WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-zero WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		D931E012838E3BB5A52ECC1A1F63DE80 /* MapboxDirections.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxDirections.swift-prefix.pch"; sourceTree = "<group>"; };
+		E337FE33337F2FE616D1922631850379 /* Polyline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Polyline.framework; path = Polyline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA21B0ECF01EB4EB73A46DA172AAEF47 /* Pods-zero.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-zero.modulemap"; sourceTree = "<group>"; };
+		ECDCD999D785E7C5EBA8B3441530C17A /* Pods-zero-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-zero-resources.sh"; sourceTree = "<group>"; };
+		F25D2D88371F7F295DD3369EFED40700 /* Polyline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polyline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5BD93C56EC2A27219EBD6C288B57C33 /* MBRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRoute.swift; path = MapboxDirections/MBRoute.swift; sourceTree = "<group>"; };
+		FD35B8C21B4E5C0D4139EBB04EC90B86 /* Polyline.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Polyline.xcconfig; sourceTree = "<group>"; };
+		FF2FB365A18646B281EC221B256B0CD9 /* Pods-zero WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-zero WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20270A0E3EF3C9E4357D904F5043BCC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303E21D5AE245BFAACEDC2516C7450A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E86DFD49F8B8030EAEF1A0C232F1F52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43130B958B55B322894CE4B85E633E29 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		587E4F2B564EBF713C54842B934D9FA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4303EACA116F8F3D4E0345EB78C22C11 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		896D9F822C90A684B6E074A2A6728C8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6695277F36598DC6CF412AC278D80C /* Foundation.framework in Frameworks */,
+				078EB2562716B0319666500A17A2CDE5 /* Polyline.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96B5C02175BD5D85FB524C6C8D41A108 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0727A400467586663F4B11D7C19208 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A08569B55A6C1369F016F2CDCE9A33D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEA495212AD60B9C482FF731D829CD29 /* Pods-zero */,
+				E8DE2BC8DA0F99A804E1189178DA5248 /* Pods-zero WatchKit App */,
+				35530DD7410D2A2B1CA71202174027D3 /* Pods-zero WatchKit Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		35530DD7410D2A2B1CA71202174027D3 /* Pods-zero WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FF2FB365A18646B281EC221B256B0CD9 /* Pods-zero WatchKit Extension-acknowledgements.markdown */,
+				09E0931BEC4D47E973BEBCDC2FD104DC /* Pods-zero WatchKit Extension-acknowledgements.plist */,
+				D39590D5942A68515EB8581E9648BCC8 /* Pods-zero WatchKit Extension-dummy.m */,
+				17E1000B9307EC67B08CD78142831754 /* Pods-zero WatchKit Extension-frameworks.sh */,
+				9CBCA2A54AE0808F17797A3D75DEAD99 /* Pods-zero WatchKit Extension-resources.sh */,
+				935DE3375493945B14B86C104A5C1821 /* Pods-zero WatchKit Extension.debug.xcconfig */,
+				93F88D5972ACA1298417F44740DA4D2E /* Pods-zero WatchKit Extension.release.xcconfig */,
+			);
+			name = "Pods-zero WatchKit Extension";
+			path = "Target Support Files/Pods-zero WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		3733FE07403C646E6AFB1DD48BCA5B0E /* Polyline */ = {
+			isa = PBXGroup;
+			children = (
+				9AC356B386EA0B9EAAA8E89DCA7F2F85 /* Polyline.h */,
+				4012DD47AF8964D592C8FAC513A32F4E /* Polyline.swift */,
+				8862ED17C060954ADBFF2608470E5987 /* Support Files */,
+			);
+			name = Polyline;
+			path = Polyline;
+			sourceTree = "<group>";
+		};
+		4579DA3B702155A68FDC1A49BA7C783C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				58153F40E6172D1335C980DE48D48A03 /* Info.plist */,
+				CF92D52A51444CE366A9A3AC5073C26D /* MapboxDirections.swift.modulemap */,
+				D14C8E8F064DD43DB6281068F00F9FE9 /* MapboxDirections.swift.xcconfig */,
+				AD8232D1B1325A655173DBC4DC6BF954 /* MapboxDirections.swift-dummy.m */,
+				D931E012838E3BB5A52ECC1A1F63DE80 /* MapboxDirections.swift-prefix.pch */,
+				B63E0EDD77A5AB5E608CB2357D6F2659 /* MapboxDirections.swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MapboxDirections.swift";
+			sourceTree = "<group>";
+		};
+		677B7A56448BA32E72DA474AFCBE306F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F25D2D88371F7F295DD3369EFED40700 /* Polyline.framework */,
+				920CA6FAE3CF489D5EEEC891CBAF3812 /* iOS */,
+				A463A443ACA8680AC602D13EE0D8944F /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				677B7A56448BA32E72DA474AFCBE306F /* Frameworks */,
+				D6F25B6E658E32D3FA4C2B0B562A0658 /* Pods */,
+				8B5E3D3D2598C1DE17BC1964A285266F /* Products */,
+				2A08569B55A6C1369F016F2CDCE9A33D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8862ED17C060954ADBFF2608470E5987 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EAB057C7501106679C00D5F3A6B5569 /* Info.plist */,
+				4D6B2036B65A5E1719A2A974953AA2EB /* Polyline.modulemap */,
+				FD35B8C21B4E5C0D4139EBB04EC90B86 /* Polyline.xcconfig */,
+				80A8DB1DF729D9333ED6DBC6119FA9AB /* Polyline-dummy.m */,
+				90A92C5599385932A1AD41CD3DA310DC /* Polyline-prefix.pch */,
+				6501DEAB4C0CF726D0E9AAABB75ABE61 /* Polyline-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Polyline";
+			sourceTree = "<group>";
+		};
+		8B5E3D3D2598C1DE17BC1964A285266F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FB63A7BC463438FF506A78CF6BC9686 /* libPods-zero WatchKit App.a */,
+				C2A111F511DC047B5FCF988B087484A2 /* libPods-zero WatchKit Extension.a */,
+				A6DAE71EF618B4128D300CA95FA2440C /* MapboxDirections.framework */,
+				7EF0AB0FB58CF85F7EC6900C2DF16BC1 /* Pods_zero.framework */,
+				E337FE33337F2FE616D1922631850379 /* Polyline.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		920CA6FAE3CF489D5EEEC891CBAF3812 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4C809CAA7D0527D3A9AF9EDB4B4F00F2 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A463A443ACA8680AC602D13EE0D8944F /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				D566ABCB2F93AE0505CAA26658A047BA /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		D6F25B6E658E32D3FA4C2B0B562A0658 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFC7E87FC4625D88C1FB6229B5AB4F54 /* MapboxDirections.swift */,
+				3733FE07403C646E6AFB1DD48BCA5B0E /* Polyline */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DFC7E87FC4625D88C1FB6229B5AB4F54 /* MapboxDirections.swift */ = {
+			isa = PBXGroup;
+			children = (
+				A9CFE479DF6A7A56AF7904DB07951BB7 /* MapboxDirections.h */,
+				A2078D9B1A10CDB623EB9BC29115DF73 /* MBDirections.swift */,
+				F5BD93C56EC2A27219EBD6C288B57C33 /* MBRoute.swift */,
+				6B14FB49F825C33AA1A9898A79D41C8A /* MBRouteLeg.swift */,
+				1031192A0E74242845278138F1C7CA9D /* MBRouteOptions.swift */,
+				BA27354CA8D3ABA8565A2B2F83040AB1 /* MBRouteStep.swift */,
+				0E4F485141E5AD11097322E481BD0E0A /* MBWaypoint.swift */,
+				4579DA3B702155A68FDC1A49BA7C783C /* Support Files */,
+			);
+			name = MapboxDirections.swift;
+			path = MapboxDirections.swift;
+			sourceTree = "<group>";
+		};
+		E8DE2BC8DA0F99A804E1189178DA5248 /* Pods-zero WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				34B27D2CA2A12CAA8A3ED912847C74B9 /* Pods-zero WatchKit App-acknowledgements.markdown */,
+				D815D7B218FD19B58A6424B7AF4021BB /* Pods-zero WatchKit App-acknowledgements.plist */,
+				507FC18AF59E5A92B3E2783DF3D54552 /* Pods-zero WatchKit App-dummy.m */,
+				968CF8805851A3D479E744A6A1B6AFA3 /* Pods-zero WatchKit App-frameworks.sh */,
+				207434C308FF38A10552B2830C3E8888 /* Pods-zero WatchKit App-resources.sh */,
+				8557E8409FD3FB4BA8477EC13AF3374C /* Pods-zero WatchKit App.debug.xcconfig */,
+				60B985F41128315B47E14E853B0D9B4A /* Pods-zero WatchKit App.release.xcconfig */,
+			);
+			name = "Pods-zero WatchKit App";
+			path = "Target Support Files/Pods-zero WatchKit App";
+			sourceTree = "<group>";
+		};
+		EEA495212AD60B9C482FF731D829CD29 /* Pods-zero */ = {
+			isa = PBXGroup;
+			children = (
+				B5A6021EBADE2420EE38B37613CF1882 /* Info.plist */,
+				EA21B0ECF01EB4EB73A46DA172AAEF47 /* Pods-zero.modulemap */,
+				1098FDA52964DC0C2BCA8A364AB4D8AC /* Pods-zero-acknowledgements.markdown */,
+				69CD49F9BB678B5A5E3A49FF41D2BD62 /* Pods-zero-acknowledgements.plist */,
+				5F9B15195C82931704D8B1721A7B7C2D /* Pods-zero-dummy.m */,
+				0BD7667A96FDE2632DFA38FBFEDE63E2 /* Pods-zero-frameworks.sh */,
+				ECDCD999D785E7C5EBA8B3441530C17A /* Pods-zero-resources.sh */,
+				7150CEF029D46CAC35215DEAFA379DA0 /* Pods-zero-umbrella.h */,
+				620204E35BC6D2F987B215163334835A /* Pods-zero.debug.xcconfig */,
+				CE150EB6F246C5FE9FD5FC5AACDBA0FB /* Pods-zero.release.xcconfig */,
+			);
+			name = "Pods-zero";
+			path = "Target Support Files/Pods-zero";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4A640AEB7755BE102A8028E33C7FBA48 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				679973434D07B6A21D8929326CC4B847 /* Pods-zero-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC7EC7A63B62B801006D63DF3ADE4EB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B234AC9C6648C986A5342D34397052D /* MapboxDirections.h in Headers */,
+				578BF8DD48D47F3F1A0CC39F116F9A41 /* MapboxDirections.swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A00FA7F6FDF560C4CFF9C4784EFD9A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				865CE93C9BB25EC306CFC0205B3B3B49 /* Polyline-umbrella.h in Headers */,
+				E1F58BDCA1F9292C024FB504390E847F /* Polyline.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		47452CF502ADAB7F58D5299F34906559 /* Pods-zero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FC0378E159E22950F348E95D63BBBA /* Build configuration list for PBXNativeTarget "Pods-zero" */;
+			buildPhases = (
+				508197B981C7D1B8F6F766018D965B49 /* Sources */,
+				2E86DFD49F8B8030EAEF1A0C232F1F52 /* Frameworks */,
+				4A640AEB7755BE102A8028E33C7FBA48 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CA835E0685D6C55226056EB1DE38D04 /* PBXTargetDependency */,
+				081C755116504A9DE0394E790214E839 /* PBXTargetDependency */,
+			);
+			name = "Pods-zero";
+			productName = "Pods-zero";
+			productReference = 7EF0AB0FB58CF85F7EC6900C2DF16BC1 /* Pods_zero.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5379042F8018126384950303E49ADC83 /* Polyline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E89447B3C41619882DF31357693E9B7A /* Build configuration list for PBXNativeTarget "Polyline" */;
+			buildPhases = (
+				2E491D064261645BE7CED3B9AC298104 /* Sources */,
+				96B5C02175BD5D85FB524C6C8D41A108 /* Frameworks */,
+				69A00FA7F6FDF560C4CFF9C4784EFD9A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Polyline;
+			productName = Polyline;
+			productReference = E337FE33337F2FE616D1922631850379 /* Polyline.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5F9D7AEA859182383297E87060A3FBF7 /* Pods-zero WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93AFFD31159F40B185825FA8BD937164 /* Build configuration list for PBXNativeTarget "Pods-zero WatchKit Extension" */;
+			buildPhases = (
+				4F720ECF7AF128628AB3970C8D5CD7B0 /* Sources */,
+				20270A0E3EF3C9E4357D904F5043BCC1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-zero WatchKit Extension";
+			productName = "Pods-zero WatchKit Extension";
+			productReference = C2A111F511DC047B5FCF988B087484A2 /* libPods-zero WatchKit Extension.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C81B445BD3FB385E7EE379461932C215 /* Pods-zero WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 484EB48834F9E2D324EDE6AD984C52C0 /* Build configuration list for PBXNativeTarget "Pods-zero WatchKit App" */;
+			buildPhases = (
+				6C79A9E09D7F65A749799651DADBC52B /* Sources */,
+				587E4F2B564EBF713C54842B934D9FA9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-zero WatchKit App";
+			productName = "Pods-zero WatchKit App";
+			productReference = 7FB63A7BC463438FF506A78CF6BC9686 /* libPods-zero WatchKit App.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C958C92B3023C9D5259FC112C79C4ED0 /* MapboxDirections.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A18374BDB9F0BB1DBB922A2D5793F013 /* Build configuration list for PBXNativeTarget "MapboxDirections.swift" */;
+			buildPhases = (
+				01A6B6B3D0473EEC1DF446F5821832FF /* Sources */,
+				896D9F822C90A684B6E074A2A6728C8B /* Frameworks */,
+				5FC7EC7A63B62B801006D63DF3ADE4EB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23EAF4801073F40A4BDBA072BA6828B3 /* PBXTargetDependency */,
+			);
+			name = MapboxDirections.swift;
+			productName = MapboxDirections.swift;
+			productReference = A6DAE71EF618B4128D300CA95FA2440C /* MapboxDirections.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 8B5E3D3D2598C1DE17BC1964A285266F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C958C92B3023C9D5259FC112C79C4ED0 /* MapboxDirections.swift */,
+				47452CF502ADAB7F58D5299F34906559 /* Pods-zero */,
+				C81B445BD3FB385E7EE379461932C215 /* Pods-zero WatchKit App */,
+				5F9D7AEA859182383297E87060A3FBF7 /* Pods-zero WatchKit Extension */,
+				5379042F8018126384950303E49ADC83 /* Polyline */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01A6B6B3D0473EEC1DF446F5821832FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB91BECC1A52859397FEAD4C398635C4 /* MapboxDirections.swift-dummy.m in Sources */,
+				737A1C4C5F9E3FABFFC3EDF954187B6B /* MBDirections.swift in Sources */,
+				85E6C060A935A8B838580336E0F35563 /* MBRoute.swift in Sources */,
+				4788EE8C41FE4A6AAFDE26B92062E42E /* MBRouteLeg.swift in Sources */,
+				18B6124D6E276AA1ED0C2DEBBE4F48AE /* MBRouteOptions.swift in Sources */,
+				2C39800F4B86D4A1D8D918D2750F81B0 /* MBRouteStep.swift in Sources */,
+				EEE5F192737DE585298320A690F69419 /* MBWaypoint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E491D064261645BE7CED3B9AC298104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6F5C5E1E61F3C4F05A04C80C5E60C2 /* Polyline-dummy.m in Sources */,
+				F3FA5D9685FEF803FB3F7FA057FA3A9A /* Polyline.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F720ECF7AF128628AB3970C8D5CD7B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2177A89D84D9D5C961339B4E3D689FD /* Pods-zero WatchKit Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		508197B981C7D1B8F6F766018D965B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154D9B1D382F213487BB121D8096BADB /* Pods-zero-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C79A9E09D7F65A749799651DADBC52B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C9CD45C6085D511FE3F15C7A0CD7A6 /* Pods-zero WatchKit App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		081C755116504A9DE0394E790214E839 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Polyline;
+			target = 5379042F8018126384950303E49ADC83 /* Polyline */;
+			targetProxy = 02F5FCA8B04864934845F8582083E637 /* PBXContainerItemProxy */;
+		};
+		23EAF4801073F40A4BDBA072BA6828B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Polyline;
+			target = 5379042F8018126384950303E49ADC83 /* Polyline */;
+			targetProxy = 9C3E36008243DB6BF5BFC992F39C6444 /* PBXContainerItemProxy */;
+		};
+		2CA835E0685D6C55226056EB1DE38D04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MapboxDirections.swift;
+			target = C958C92B3023C9D5259FC112C79C4ED0 /* MapboxDirections.swift */;
+			targetProxy = 11F586F0376455894F8D92CA80FF9415 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		096C3883395D449CBE303A837029E03A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		1C3F24CBE25909D87A76B757F17A4B73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD35B8C21B4E5C0D4139EBB04EC90B86 /* Polyline.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Polyline/Polyline-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Polyline/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Polyline/Polyline.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Polyline;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2509A26E7B716F49290266798EBB11F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD35B8C21B4E5C0D4139EBB04EC90B86 /* Polyline.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Polyline/Polyline-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Polyline/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Polyline/Polyline.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Polyline;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2E8639EB16E86DE296FCDF7CD99E0B09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		2ED8178B088B126B458924AE319FD796 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D14C8E8F064DD43DB6281068F00F9FE9 /* MapboxDirections.swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MapboxDirections.swift/MapboxDirections.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MapboxDirections.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MapboxDirections.swift/MapboxDirections.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MapboxDirections;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		386DEBA73614A981C7F3A96A178E2ED6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60B985F41128315B47E14E853B0D9B4A /* Pods-zero WatchKit App.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		8BE86FE97F44852C8392EE278E185182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 935DE3375493945B14B86C104A5C1821 /* Pods-zero WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		C1BCA953BE4CF34F2E9F5254786A15AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8557E8409FD3FB4BA8477EC13AF3374C /* Pods-zero WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		DA56086EE2C882609CDCF8EB00E0F0FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D14C8E8F064DD43DB6281068F00F9FE9 /* MapboxDirections.swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MapboxDirections.swift/MapboxDirections.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MapboxDirections.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MapboxDirections.swift/MapboxDirections.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MapboxDirections;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DE937C25C72848F537E7049453232BE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93F88D5972ACA1298417F44740DA4D2E /* Pods-zero WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		DFC7F6D20789F0BA2FC97A235656F245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE150EB6F246C5FE9FD5FC5AACDBA0FB /* Pods-zero.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-zero/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-zero/Pods-zero.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_zero;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F8105F46E819CB383D9636B1DBDE612D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 620204E35BC6D2F987B215163334835A /* Pods-zero.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-zero/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-zero/Pods-zero.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_zero;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				096C3883395D449CBE303A837029E03A /* Debug */,
+				2E8639EB16E86DE296FCDF7CD99E0B09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		484EB48834F9E2D324EDE6AD984C52C0 /* Build configuration list for PBXNativeTarget "Pods-zero WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1BCA953BE4CF34F2E9F5254786A15AA /* Debug */,
+				386DEBA73614A981C7F3A96A178E2ED6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52FC0378E159E22950F348E95D63BBBA /* Build configuration list for PBXNativeTarget "Pods-zero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8105F46E819CB383D9636B1DBDE612D /* Debug */,
+				DFC7F6D20789F0BA2FC97A235656F245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93AFFD31159F40B185825FA8BD937164 /* Build configuration list for PBXNativeTarget "Pods-zero WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE86FE97F44852C8392EE278E185182 /* Debug */,
+				DE937C25C72848F537E7049453232BE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A18374BDB9F0BB1DBB922A2D5793F013 /* Build configuration list for PBXNativeTarget "MapboxDirections.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA56086EE2C882609CDCF8EB00E0F0FA /* Debug */,
+				2ED8178B088B126B458924AE319FD796 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E89447B3C41619882DF31357693E9B7A /* Build configuration list for PBXNativeTarget "Polyline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C3F24CBE25909D87A76B757F17A4B73 /* Debug */,
+				2509A26E7B716F49290266798EBB11F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
