@@ -1,3 +1,10 @@
+/********************************/
+// CS63A - Winter 2017
+// HW1: Milestone 1
+// Student Name: Cyrus Goh
+// SID: 20186628
+/********************************/
+
 //
 //  PageContentViewController.h
 //  zero
@@ -10,9 +17,7 @@
 
 @interface PageContentViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
-//@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property NSUInteger pageIndex;
 @property NSString *titleText;
 //@property NSString *imageFile;

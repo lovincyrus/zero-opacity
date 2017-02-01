@@ -14,9 +14,16 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <map height="100" alignment="left" id="APx-5z-DLy"/>
-                        <button width="1" height="24" alignment="left" title="Button" id="mS3-w2-2yj"/>
-                        <button width="1" height="24" alignment="left" title="Button" id="aij-Q0-ZoQ"/>
+                        <group width="1" alignment="left" id="a2A-ls-Cgn">
+                            <items>
+                                <label width="136" height="100" alignment="left" text="99 MPH" textAlignment="center" id="d3J-OC-gGJ">
+                                    <color key="textColor" red="1" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <button width="1" height="48" alignment="left" title="Report" id="mS3-w2-2yj">
+                            <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </button>
                     </items>
                 </controller>
             </objects>

@@ -1,3 +1,10 @@
+/********************************/
+// CS63A - Winter 2017
+// HW1: Milestone 1
+// Student Name: Cyrus Goh
+// SID: 20186628
+/********************************/
+
 //
 //  MapViewController.m
 //  zero

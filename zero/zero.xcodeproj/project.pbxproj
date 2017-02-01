@@ -24,7 +24,6 @@
 		A4D644661E38A1DD001BCA5C /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D644651E38A1DD001BCA5C /* NotificationController.m */; };
 		A4D644681E38A1DD001BCA5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D644671E38A1DD001BCA5C /* Assets.xcassets */; };
 		A4D6447B1E38A2D4001BCA5C /* zero.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D6447A1E38A2D4001BCA5C /* zero.m */; };
-		A4D6447D1E39CEA1001BCA5C /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D6447C1E39CEA1001BCA5C /* Mapbox.framework */; };
 		A4D6447E1E39CEA1001BCA5C /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4D6447C1E39CEA1001BCA5C /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4D644821E39D6D1001BCA5C /* GetStartedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D644811E39D6D1001BCA5C /* GetStartedViewController.m */; };
 		A4D644851E39D70B001BCA5C /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D644841E39D70B001BCA5C /* MapViewController.m */; };
@@ -146,7 +145,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4D6447D1E39CEA1001BCA5C /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
