@@ -28,6 +28,8 @@
 	<string>pk.eyJ1IjoibG92aW5jeXJ1cyIsImEiOiJjaXlkeTY5YzQwMTE1MzJzYzNlYmRsbHdmIn0.isaOlxu1nGIUFZ_6eDXbGA</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Shows your location on the map and helps improve OpenStreetMap.</string>
+	<key> NSLocationAlwaysUsageDescription</key>
+	<string></string>
 	<key>MGLMapboxMetricsEnabled</key>
 	<true/>
 	<key>MGLMapboxMetricsEnabledSettingShownInApp</key>

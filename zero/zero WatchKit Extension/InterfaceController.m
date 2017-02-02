@@ -8,8 +8,9 @@
 
 #import "InterfaceController.h"
 
-
+// reportBtn
 @interface InterfaceController()
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceButton *reportBtn;
 
 @end
 

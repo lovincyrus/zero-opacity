@@ -16,7 +16,7 @@
                     <items>
                         <group width="1" alignment="left" id="a2A-ls-Cgn">
                             <items>
-                                <label width="136" height="100" alignment="left" text="99 MPH" textAlignment="center" id="d3J-OC-gGJ">
+                                <label width="136" height="100" alignment="left" text="MPH" textAlignment="center" id="d3J-OC-gGJ">
                                     <color key="textColor" red="1" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </label>
                             </items>
@@ -25,6 +25,9 @@
                             <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="reportBtn" destination="mS3-w2-2yj" id="Sk7-0i-b6d"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="338.5"/>

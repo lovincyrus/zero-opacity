@@ -1,3 +1,9 @@
+// set up watchconnectivity api
+
+// LA: 37.369168
+// LONG: -122.038412
+// Zoom Level: 14
+
 /********************************/
 // CS63A - Winter 2017
 // HW1: Milestone 1
@@ -15,12 +21,18 @@
 
 #import "MapViewController.h"
 @import Mapbox;
+@import MapboxNavigation;
+@import MapboxDirections;
 
 @interface MapViewController () <MGLMapViewDelegate>
 @property (strong, nonatomic) IBOutlet MGLMapView *mapView;
+
+@property (nonatomic) MBRouteController *navigation;
 @end
 
 @implementation MapViewController
+
+static NSString *MBXTempProfileIdentifierAutomobileAvoidingTraffic = @"mapbox/driving-traffic";
 
 // female: 👮‍♀️👮🏻‍♀️👮🏼‍♀️👮🏽‍♀️👮🏾‍♀️👮🏿‍♀️
 // male: 👮👮🏻👮🏼👮🏽👮🏾👮🏿
@@ -29,6 +41,9 @@
     [super viewDidLoad];
     NSLog(@"viewDidLoad MapVC");
 
+//    [self.mapView setStyleURL:[MGLStyle streetsStyleURLWithVersion:dark-v9]];
+    self.mapView.userTrackingMode = MGLUserTrackingModeFollow;
+
     // set the map view's delegate property
     self.mapView.delegate = self;
 
@@ -36,7 +51,7 @@
     MGLPointAnnotation *point = [[MGLPointAnnotation alloc] init];
 
     // give the point annotation a coordinate
-    point.coordinate = CLLocationCoordinate2DMake(37.369168, -122.038412);
+    //point.coordinate = CLLocationCoordinate2DMake(37.369168, -122.038412);
     point.title = @"Chick-fil-A";
     point.subtitle = @"550 W El Camino Real, Sunnyvale, CA 94087";
 
@@ -58,6 +73,12 @@
 - (BOOL)mapView:(MGLMapView *)mapView annotationCanShowCallout:(id <MGLAnnotation>)annotation {
     // Always try to show a callout when an annotation is tapped.
     return YES;
+}
+
+- (void)startNavigation:(MBRoute *)route {
+    self.mapView.userTrackingMode = MGLUserTrackingModeFollowWithCourse;
+    self.navigation = [[MBRouteController alloc] initWithRoute:route];
+    [self.navigation resume];
 }
 
 /*
