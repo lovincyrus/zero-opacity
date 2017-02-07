@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,21 +16,22 @@
                     <items>
                         <group width="1" alignment="left" id="a2A-ls-Cgn">
                             <items>
-                                <label width="136" height="100" alignment="left" text="MPH" textAlignment="center" id="d3J-OC-gGJ">
+                                <label width="156" height="100" alignment="left" text="MPH" textAlignment="center" id="d3J-OC-gGJ">
                                     <color key="textColor" red="1" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </label>
                             </items>
                         </group>
-                        <button width="1" height="48" alignment="left" title="Report" id="mS3-w2-2yj">
-                            <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </button>
+                        <group width="156" height="46" alignment="left" id="mny-IO-jXG">
+                            <items>
+                                <button width="1" height="48" alignment="center" verticalAlignment="bottom" title="Report" id="PH2-zH-mDu" userLabel="sendReport">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                            </items>
+                        </group>
                     </items>
-                    <connections>
-                        <outlet property="reportBtn" destination="mS3-w2-2yj" id="Sk7-0i-b6d"/>
-                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="338.5"/>
+            <point key="canvasLocation" x="219.69230769230771" y="336.94871794871796"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

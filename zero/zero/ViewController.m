@@ -13,18 +13,6 @@
 //  Copyright © 2017 Cyrus Goh. All rights reserved.
 //
 
-
-/**
- 
- 1.
- https://www.mapbox.com/ios-sdk/#telemetry_opt_out
-
- Integrate the setting directly into your app. Hook a UISwitch control up to the MGLMapboxMetricsEnabled Boolean user default, which should be YES by default. Then set MGLMapboxMetricsEnabledSettingShownInApp to YES in your app’s Info.plist file.
- 
- 
- 2. CMD + Shift + K to clean the project
-**/
-
 #import "MapViewController.h"
 #import "ViewController.h"
 
