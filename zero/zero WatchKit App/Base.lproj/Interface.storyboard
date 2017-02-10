@@ -16,22 +16,42 @@
                     <items>
                         <group width="1" alignment="left" id="a2A-ls-Cgn">
                             <items>
-                                <label width="156" height="100" alignment="left" text="MPH" textAlignment="center" id="d3J-OC-gGJ">
-                                    <color key="textColor" red="1" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <label width="153" height="56" alignment="left" text="Reply" textAlignment="center" numberOfLines="3" id="us1-OP-Urf">
+                                    <color key="textColor" red="1" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </label>
                             </items>
                         </group>
-                        <group width="156" height="46" alignment="left" id="mny-IO-jXG">
+                        <group width="1" alignment="left" id="F1s-Lo-KM1">
                             <items>
-                                <button width="1" height="48" alignment="center" verticalAlignment="bottom" title="Report" id="PH2-zH-mDu" userLabel="sendReport">
+                                <button width="72" alignment="left" title="Yes" id="gzP-r1-O1V">
+                                    <connections>
+                                        <action selector="yesButtonPressed" destination="AgC-eL-Hgc" id="Un4-cX-LGL"/>
+                                    </connections>
+                                </button>
+                                <button width="78" alignment="left" title="No" id="Ox8-Lr-HfE">
+                                    <connections>
+                                        <action selector="noButtonPressed" destination="AgC-eL-Hgc" id="H9T-2M-H56"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="156" height="71" alignment="left" id="mny-IO-jXG">
+                            <items>
+                                <button width="1" height="79" alignment="center" verticalAlignment="bottom" title="Send Message" id="YZB-xO-pSY">
                                     <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="sendMessageButtonPressed" destination="AgC-eL-Hgc" id="BSk-Sg-Udr"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="replyLabel" destination="us1-OP-Urf" id="eUN-Di-5WC"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="219.69230769230771" y="336.94871794871796"/>
+            <point key="canvasLocation" x="219" y="319.5"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
