@@ -2,6 +2,7 @@ PODS:
   - Mapbox-iOS-SDK-symbols (3.4.0-symbols)
   - MapboxDirections.swift (0.6.0):
     - Polyline (~> 4.0.0)
+  - MapboxGeocoder.swift (0.5.0)
   - MapboxNavigation.swift (0.0.3):
     - MapboxDirections.swift
   - Polyline (4.0.0)
@@ -9,6 +10,7 @@ PODS:
 DEPENDENCIES:
   - Mapbox-iOS-SDK-symbols (from `https://raw.githubusercontent.com/mapbox/mapbox-gl-native/ios-v3.4.0/platform/ios/Mapbox-iOS-SDK-symbols.podspec`)
   - MapboxDirections.swift (from `https://github.com/mapbox/MapboxDirections.swift.git`, branch `swift3`)
+  - MapboxGeocoder.swift (from `https://github.com/mapbox/MapboxGeocoder.swift.git`, tag `v0.5.0`)
   - MapboxNavigation.swift (from `https://github.com/mapbox/MapboxNavigation.swift.git`, tag `v0.0.4`)
 
 EXTERNAL SOURCES:
@@ -17,6 +19,9 @@ EXTERNAL SOURCES:
   MapboxDirections.swift:
     :branch: swift3
     :git: https://github.com/mapbox/MapboxDirections.swift.git
+  MapboxGeocoder.swift:
+    :git: https://github.com/mapbox/MapboxGeocoder.swift.git
+    :tag: v0.5.0
   MapboxNavigation.swift:
     :git: https://github.com/mapbox/MapboxNavigation.swift.git
     :tag: v0.0.4
@@ -25,6 +30,9 @@ CHECKOUT OPTIONS:
   MapboxDirections.swift:
     :commit: 581f246ae4f821a62af6bbe8c4ea1aac67b0cf9b
     :git: https://github.com/mapbox/MapboxDirections.swift.git
+  MapboxGeocoder.swift:
+    :git: https://github.com/mapbox/MapboxGeocoder.swift.git
+    :tag: v0.5.0
   MapboxNavigation.swift:
     :git: https://github.com/mapbox/MapboxNavigation.swift.git
     :tag: v0.0.4
@@ -32,9 +40,10 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Mapbox-iOS-SDK-symbols: bd2654585472ca25fe89e9adfc11ef5550020f84
   MapboxDirections.swift: 4acd753d0079bae4f2fae2b2cbda98922909de09
+  MapboxGeocoder.swift: 4fbe12e42458db895ff73739c69743c943d0824e
   MapboxNavigation.swift: 8759dbdcd54a5985801a7ac7d87a84846ee66dd4
   Polyline: c6de7430bf6ff0bfff1f087343597b83b38fdb69
 
-PODFILE CHECKSUM: ec52b4d6dc569a54d3eb499321a93b53ef22a52e
+PODFILE CHECKSUM: c12473fec04b08caf89c9c708f2a4c94f4f994fc
 
 COCOAPODS: 1.2.0

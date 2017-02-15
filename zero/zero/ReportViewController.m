@@ -101,8 +101,10 @@ activationDidCompleteWithState:(WCSessionActivationState)activationState
 
 
 /**
+
  Standard WatchKit delegate
- */
+
+**/
 -(void)sessionWatchStateDidChange:(nonnull WCSession *)session
 {
 
