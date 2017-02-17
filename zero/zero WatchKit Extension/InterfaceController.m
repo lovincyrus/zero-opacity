@@ -157,9 +157,12 @@ activationDidCompleteWithState:(WCSessionActivationState)activationState
 
 
 
-/**
- Standard WatchKit delegate
- */
+/** 
+ 
+ Standard Wathckit Delegate
+
+**/
+
 -(void)sessionWatchStateDidChange:(nonnull WCSession *)session {
     if(WCSession.isSupported){
         WCSession* session = WCSession.defaultSession;
@@ -206,5 +209,7 @@ activationDidCompleteWithState:(WCSessionActivationState)activationState
 
     [self packageAndSendMessage:@{@"request":@"No",@"counter":[NSString stringWithFormat:@"%i",_counter]}];
 }
+
+
 
 @end

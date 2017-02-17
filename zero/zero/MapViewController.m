@@ -1,8 +1,18 @@
-// set up watchconnectivity api
+/**
+ 
+ // original testing annotation
+ LA: 37.369168
+ LONG: -122.038412
+ Zoom Level: 14
 
-// LA: 37.369168
-// LONG: -122.038412
-// Zoom Level: 14
+ // setting mapbox style
+ [self.mapView setStyleURL:[MGLStyle streetsStyleURLWithVersion:dark-v9]];
+ 
+
+
+**/
+
+
 
 /********************************/
 // CS63A - Winter 2017
@@ -41,7 +51,6 @@ static NSString *MBXTempProfileIdentifierAutomobileAvoidingTraffic = @"mapbox/dr
     [super viewDidLoad];
     NSLog(@"viewDidLoad MapVC");
 
-//    [self.mapView setStyleURL:[MGLStyle streetsStyleURLWithVersion:dark-v9]];
     self.mapView.userTrackingMode = MGLUserTrackingModeFollow;
 
     // set the map view's delegate property
@@ -51,14 +60,12 @@ static NSString *MBXTempProfileIdentifierAutomobileAvoidingTraffic = @"mapbox/dr
 //    MGLPointAnnotation *point = [[MGLPointAnnotation alloc] init];
 
     // give the point annotation a coordinate
-    //point.coordinate = CLLocationCoordinate2DMake(37.369168, -122.038412);
+//    point.coordinate = CLLocationCoordinate2DMake(37.369168, -122.038412);
 //    point.title = @"Chick-fil-A";
 //    point.subtitle = @"550 W El Camino Real, Sunnyvale, CA 94087";
 
     // add the annotation to the map view
 //    [self.mapView addAnnotation:point];
-
-
 }
 
 
@@ -76,7 +83,7 @@ static NSString *MBXTempProfileIdentifierAutomobileAvoidingTraffic = @"mapbox/dr
 
 
 
-// mapview
+
 // Tapping the annotation (display title and subtitle)
 - (BOOL)mapView:(MGLMapView *)mapView annotationCanShowCallout:(id <MGLAnnotation>)annotation {
     // Always try to show a callout when an annotation is tapped.
@@ -94,6 +101,33 @@ static NSString *MBXTempProfileIdentifierAutomobileAvoidingTraffic = @"mapbox/dr
     [self.navigation resume];
 }
 
+
+
+
+
+//- (void)reportPressed {
+//    // reportPressed -> creates annotation on that current location
+//}
+//
+//
+//
+//
+//
+//
+//- (IBAction)yesButtonPressed:(id)sender {
+//    [self.replyLabel setText:@"Sending Yes..."];
+//
+//    self.counter++;
+//    self.counterLabel.text = [NSString stringWithFormat:@"%i",_counter];
+//
+//    //Build message and send
+//    [self packageAndSendMessage:@{@"request":@"Yes",@"counter":[NSString stringWithFormat:@"%i",_counter]}];
+//}
+
+
+
+
+
 /*
 #pragma mark - Navigation
 
@@ -103,5 +137,9 @@ static NSString *MBXTempProfileIdentifierAutomobileAvoidingTraffic = @"mapbox/dr
     // Pass the selected object to the new view controller.
 }
 */
+
+
+
+
 
 @end
