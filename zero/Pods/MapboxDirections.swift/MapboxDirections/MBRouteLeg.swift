@@ -63,7 +63,7 @@ open class RouteLeg: NSObject, NSSecureCoding {
     
     open static var supportsSecureCoding = true
     
-    open func encode(with coder: NSCoder) {
+    public func encode(with coder: NSCoder) {
         coder.encode(source, forKey: "source")
         coder.encode(destination, forKey: "destination")
         coder.encode(steps, forKey: "steps")

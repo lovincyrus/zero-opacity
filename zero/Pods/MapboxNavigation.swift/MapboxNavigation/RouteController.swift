@@ -14,13 +14,13 @@ open class RouteController: NSObject {
 
      The variable can be provided by the developer so options on it can be set.
     */
-    open var locationManager = CLLocationManager()
+    public var locationManager = CLLocationManager()
     
     
     /*
      `routeProgress` is a class containing all progress information of user along the route, leg and step.
     */
-    open var routeProgress: RouteProgress
+    public var routeProgress: RouteProgress
     
     
     /*
@@ -47,7 +47,7 @@ open class RouteController: NSObject {
      
      Will continue monitoring until `suspend()` is called.
      */
-    open func resume() {
+    public func resume() {
         locationManager.startUpdatingLocation()
         locationManager.startUpdatingHeading()
     }
@@ -55,7 +55,7 @@ open class RouteController: NSObject {
     /*
      Stops monitoring users location along route.
      */
-    open func suspend() {
+    public func suspend() {
         locationManager.stopUpdatingLocation()
         locationManager.stopUpdatingHeading()
     }

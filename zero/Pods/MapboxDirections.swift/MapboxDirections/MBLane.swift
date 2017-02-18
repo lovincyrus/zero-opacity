@@ -4,11 +4,11 @@ import Foundation
  A lane on the road approaching an intersection.
  */
 @objc(MBLane)
-open class Lane: NSObject, NSSecureCoding {
+public class Lane: NSObject, NSSecureCoding {
     /**
      The lane indications specifying the maneuvers that may be executed from the lane.
      */
-    open let indications: LaneIndication
+    public let indications: LaneIndication
     
     internal init(indications: LaneIndication) {
         self.indications = indications
@@ -30,7 +30,7 @@ open class Lane: NSObject, NSSecureCoding {
     
     open static var supportsSecureCoding = true
     
-    open func encode(with coder: NSCoder) {
+    public func encode(with coder: NSCoder) {
         coder.encode(indications.description.components(separatedBy: ","), forKey: "indications")
     }
 }

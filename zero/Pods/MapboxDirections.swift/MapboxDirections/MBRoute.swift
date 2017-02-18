@@ -72,7 +72,7 @@ open class Route: NSObject, NSSecureCoding {
     
     open static var supportsSecureCoding = true
     
-    open func encode(with coder: NSCoder) {
+    public func encode(with coder: NSCoder) {
         let coordinateDictionaries = coordinates?.map { [
             "latitude": $0.latitude,
             "longitude": $0.longitude,
