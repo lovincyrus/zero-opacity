@@ -11,54 +11,52 @@
 
 
 @interface InterfaceController() <WCSessionDelegate>
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *replyLabel;
 
-// reportBtn
-//@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceButton *reportBtn;
+@property (assign) int counter;
+
+//@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceButton *reportButton;
+//@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *speedLabel;
 
 // session
-@property (strong, nonatomic) WCSession *session;
-
+//@property (strong, nonatomic) WCSession *session;
 @end
 
 
 @implementation InterfaceController
 
--(instancetype)init {
-    self = [super init];
 
-    // check if a session is supported
-    if (self) {
-        if ([WCSession isSupported]) {
-            self.session = [WCSession defaultSession];
-            self.session.delegate = self;
-            [self.session activateSession];
-        }
+
+- (void)awakeWithContext:(id)context {
+    [super awakeWithContext:context];
+
+    // Configuring and activating a session
+    if(WCSession.isSupported){
+        WCSession* session = WCSession.defaultSession;
+        session.delegate = self;
+        [session activateSession];
+        NSLog(@"InterfaceController.m WCSession is supported");
+
     }
-    return self;
+
+    self.counter = 1;
+    [self setTitle:[NSString stringWithFormat:@"%i",_counter]];
 }
 
 
 
 
-// activeationDidCompleteWithState
 - (void)session:(WCSession *)session
 activationDidCompleteWithState:(WCSessionActivationState)activationState
           error:(NSError *)error {
+    NSLog(@"Session did complete with state");
 }
-
-
-
-//
-//- (void)awakeWithContext:context {
-//    [super awakeWithContext:context];
-//    NSLog(@"Passed %@",context);
-//}
 
 
 
 
 - (void)willActivate {
-// This method is called when watch view controller is about to be visible to user
+    // This method is called when watch view controller is about to be visible to user
     [super willActivate];
     NSLog(@"%@ willActivate (HANDS UP)", self);
 }
@@ -75,7 +73,6 @@ activationDidCompleteWithState:(WCSessionActivationState)activationState
 
 
 
-<<<<<<< HEAD
 
 - (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *, id> *)message replyHandler:(void(^)(NSDictionary<NSString *, id> *replyMessage))replyHandler {
     if(message){
@@ -108,16 +105,16 @@ activationDidCompleteWithState:(WCSessionActivationState)activationState
                      NSDictionary* message = replyMessage;
                      NSString* response = message[@"response"];
 
-                        // Haptic Types
-//                     [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeSuccess];
-//                     [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeNotification];
-//                     [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeDirectionUp];
-//                     [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeDirectionDown];
+                     // Haptic Types
+                     //                     [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeSuccess];
+                     //                     [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeNotification];
+                     //                     [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeDirectionUp];
+                     //                     [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeDirectionDown];
                      [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeFailure];
-//                     [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeRetry];
-//                     [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeStart];
-//                     [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeStop];
-//                     [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeClick];
+                     //                     [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeRetry];
+                     //                     [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeStart];
+                     //                     [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeStop];
+                     //                     [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeClick];
 
 
                      if(response)
@@ -128,8 +125,8 @@ activationDidCompleteWithState:(WCSessionActivationState)activationState
              }
                     errorHandler:^(NSError * __nonnull error) {
 
-                    // Failure Haptic
-                     [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeFailure];
+                        // Failure Haptic
+                        [[WKInterfaceDevice currentDevice] playHaptic:WKHapticTypeFailure];
 
                         dispatch_async(dispatch_get_main_queue(), ^{
                             [self.replyLabel setText:error.localizedDescription];
@@ -160,40 +157,34 @@ activationDidCompleteWithState:(WCSessionActivationState)activationState
 
 
 
-/** 
- 
- Standard Wathckit Delegate
-
-**/
-
+/**
+ Standard WatchKit delegate
+ */
 -(void)sessionWatchStateDidChange:(nonnull WCSession *)session {
     if(WCSession.isSupported){
         WCSession* session = WCSession.defaultSession;
         session.delegate = self;
         [session activateSession];
     }
-=======
-- (IBAction)reportPressed {
-    [self sendReport:@"Report"];
-    NSLog(@"reportPressed");
->>>>>>> parent of 823946e... iOS and watchOS successfully send data and trigger haptic feedback
 }
 
 
 
+#pragma mark Button Actions
+- (IBAction)sendMessageButtonPressed {
+    [self.replyLabel setText:@"Sending..."];
 
-// send report to reportLabel
--(void)sendReport:(NSString *)report {
-    NSDictionary *applicationDict = @{@"report":report};
-    [self.session updateApplicationContext:applicationDict error:nil];
+    self.counter++;
+    [self setTitle:[NSString stringWithFormat:@"%i",_counter]];
 
-    NSLog(@"sendReport");
+    NSDictionary* message = @{@"request":[NSString stringWithFormat:@"Message %d from the Phone",self.counter] ,@"counter":[NSString stringWithFormat:@"%d",self.counter]};
+
+    [self packageAndSendMessage:message];
 
 }
 
 
 
-<<<<<<< HEAD
 
 - (IBAction)yesButtonPressed {
     [self.replyLabel setText:@"Sending Yes..."];
@@ -202,22 +193,18 @@ activationDidCompleteWithState:(WCSessionActivationState)activationState
     [self setTitle:[NSString stringWithFormat:@"%i",_counter]];
 
     [self packageAndSendMessage:@{@"request":@"Yes",@"counter":[NSString stringWithFormat:@"%i",_counter]}];
-
+    
 }
 
 
 
 - (IBAction)noButtonPressed {
     [self.replyLabel setText:@"Sending No..."];
-
+    
     self.counter++;
     [self setTitle:[NSString stringWithFormat:@"%i",_counter]];
-
+    
     [self packageAndSendMessage:@{@"request":@"No",@"counter":[NSString stringWithFormat:@"%i",_counter]}];
 }
 
-
-
-=======
->>>>>>> parent of 823946e... iOS and watchOS successfully send data and trigger haptic feedback
 @end

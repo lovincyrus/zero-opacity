@@ -14,21 +14,43 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <group width="1" alignment="left" id="a2A-ls-Cgn">
+                        <group width="1" height="49" alignment="left" id="a2A-ls-Cgn">
                             <items>
-                                <label width="156" height="100" alignment="left" text="MPH" textAlignment="center" id="d3J-OC-gGJ">
-                                    <color key="textColor" red="1" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </label>
+                                <button width="1" height="58" alignment="left" title="Send Message" id="dLa-pn-0zw">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="sendMessageButtonPressed" destination="AgC-eL-Hgc" id="AoZ-oS-UW5"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="U7j-Ls-R5j">
+                            <items>
+                                <button width="76" height="48" alignment="center" verticalAlignment="bottom" title="Yes" id="PH2-zH-mDu" userLabel="sendReport">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="yesButtonPressed" destination="AgC-eL-Hgc" id="2fl-dy-ARZ"/>
+                                    </connections>
+                                </button>
+                                <button width="75" height="48" alignment="center" verticalAlignment="bottom" title="No" id="FH1-Of-Whw" userLabel="sendReport">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="noButtonPressed" destination="AgC-eL-Hgc" id="m6V-6s-7l8"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                         <group width="156" height="46" alignment="left" id="mny-IO-jXG">
                             <items>
-                                <button width="1" height="48" alignment="center" verticalAlignment="bottom" title="Report" id="PH2-zH-mDu" userLabel="sendReport">
-                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </button>
+                                <label width="156" height="160" alignment="left" text="Reply" textAlignment="center" id="d3J-OC-gGJ">
+                                    <color key="textColor" red="1" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="replyLabel" destination="d3J-OC-gGJ" id="Gwo-cN-EYx"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="219.69230769230771" y="336.94871794871796"/>

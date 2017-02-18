@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>MapboxGeocoder.swift.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>MapboxNavigation.swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,7 +47,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>81FD625A9A408A00D013A0B813B49C88</key>
+		<key>7DF326BA79CFFE9F16891E23DA614E09</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -68,11 +63,6 @@
 			<true/>
 		</dict>
 		<key>D6781338AAC83341ABB6C80FFAB04FFE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F3B0D303D1E2FEEE382F99CB69B2053C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

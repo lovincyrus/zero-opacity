@@ -169,10 +169,10 @@ public func decodePolyline(_ encodedPolyline: String, precision: Double = 1e5) -
     while position < length {
       
         do {
-            let resultingLat = try decodeSingleCoordinate(byteArray: byteArray, length: length, position: &position, precision: precision)
+            let resultingLat = try decodeSingleCoordinate(byteArray, length: length, position: &position, precision: precision)
             lat += resultingLat
             
-            let resultingLon = try decodeSingleCoordinate(byteArray: byteArray, length: length, position: &position, precision: precision)
+            let resultingLon = try decodeSingleCoordinate(byteArray, length: length, position: &position, precision: precision)
             lon += resultingLon
         } catch {
             return nil
@@ -278,7 +278,7 @@ private func encodeFiveBitComponents(_ value: Int) -> String {
 
 // We use a byte array (UnsafePointer<Int8>) here for performance reasons. Check with swift 2 if we can
 // go back to using [Int8]
-private func decodeSingleCoordinate(byteArray: UnsafePointer<Int8>, length: Int, position: inout Int, precision: Double = 1e5) throws -> Double {
+private func decodeSingleCoordinate(_ byteArray: UnsafePointer<Int8>, length: Int, position: inout Int, precision: Double = 1e5) throws -> Double {
     
     guard position < length else { throw PolylineError.singleCoordinateDecodingError }
     

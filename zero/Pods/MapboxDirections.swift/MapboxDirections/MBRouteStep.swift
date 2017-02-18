@@ -588,7 +588,7 @@ open class RouteStep: NSObject, NSSecureCoding {
     
     open static var supportsSecureCoding = true
     
-    public func encode(with coder: NSCoder) {
+    open func encode(with coder: NSCoder) {
         let coordinateDictionaries = coordinates?.map { [
             "latitude": $0.latitude,
             "longitude": $0.longitude,
@@ -733,7 +733,7 @@ open class RouteStep: NSObject, NSSecureCoding {
      
      If you display a name to the user, you may need to abbreviate common words like “East” or “Boulevard” to ensure that it fits in the allotted space.
      */
-    public let exitNames: [String]?
+    open let exitNames: [String]?
     
     // MARK: Getting Details About the Approach to the Next Maneuver
     
@@ -785,7 +785,7 @@ open class RouteStep: NSObject, NSSecureCoding {
      
      A route reference code commonly consists of an alphabetic network code, a space or hyphen, and a route number. You should not assume that the network code is globally unique: for example, a network code of “NH” may indicate a “National Highway” or “New Hampshire”. Moreover, a route number may not even uniqely identify a route within a given network. A destination code for a divided road is often suffixed with the cardinal direction of travel, for example “I 80 East”.
      */
-    public let destinationCodes: [String]?
+    open let destinationCodes: [String]?
     
     /**
      Destinations, such as [control cities](https://en.wikipedia.org/wiki/Control_city), that appear on guide signage for the road leading from this step’s maneuver to the next step’s maneuver.
@@ -799,7 +799,7 @@ open class RouteStep: NSObject, NSSecureCoding {
      
      Each item in the array corresponds to a cross street, starting with the intersection at the maneuver location indicated by the coordinates property and continuing with each cross street along the step.
     */
-    public let intersections: [Intersection]?
+    open let intersections: [Intersection]?
 }
 
 // MARK: Support for Directions API v4

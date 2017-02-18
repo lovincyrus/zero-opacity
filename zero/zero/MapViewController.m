@@ -1,18 +1,8 @@
-/**
- 
- // original testing annotation
- LA: 37.369168
- LONG: -122.038412
- Zoom Level: 14
+// set up watchconnectivity api
 
- // setting mapbox style
- [self.mapView setStyleURL:[MGLStyle streetsStyleURLWithVersion:dark-v9]];
- 
-
-
-**/
-
-
+// LA: 37.369168
+// LONG: -122.038412
+// Zoom Level: 14
 
 /********************************/
 // CS63A - Winter 2017
@@ -51,33 +41,28 @@ static NSString *MBXTempProfileIdentifierAutomobileAvoidingTraffic = @"mapbox/dr
     [super viewDidLoad];
     NSLog(@"viewDidLoad MapVC");
 
+    //    [self.mapView setStyleURL:[MGLStyle streetsStyleURLWithVersion:dark-v9]];
     self.mapView.userTrackingMode = MGLUserTrackingModeFollow;
 
     // set the map view's delegate property
     self.mapView.delegate = self;
 
     // create annotation and assign it to local variable point
-    MGLPointAnnotation *point = [[MGLPointAnnotation alloc] init];
+    //    MGLPointAnnotation *point = [[MGLPointAnnotation alloc] init];
 
     // give the point annotation a coordinate
-<<<<<<< HEAD
-//    point.coordinate = CLLocationCoordinate2DMake(37.369168, -122.038412);
-//    point.title = @"Chick-fil-A";
-//    point.subtitle = @"550 W El Camino Real, Sunnyvale, CA 94087";
-
-    // add the annotation to the map view
-//    [self.mapView addAnnotation:point];
-=======
     //point.coordinate = CLLocationCoordinate2DMake(37.369168, -122.038412);
-    point.title = @"Chick-fil-A";
-    point.subtitle = @"550 W El Camino Real, Sunnyvale, CA 94087";
+    //    point.title = @"Chick-fil-A";
+    //    point.subtitle = @"550 W El Camino Real, Sunnyvale, CA 94087";
 
     // add the annotation to the map view
-    [self.mapView addAnnotation:point];
+    //    [self.mapView addAnnotation:point];
 
 
->>>>>>> parent of 823946e... iOS and watchOS successfully send data and trigger haptic feedback
 }
+
+
+
 
 
 
@@ -86,21 +71,22 @@ static NSString *MBXTempProfileIdentifierAutomobileAvoidingTraffic = @"mapbox/dr
     [super didReceiveMemoryWarning];
 }
 
-<<<<<<< HEAD
 
 
 
 
 
-
-=======
 // mapview
->>>>>>> parent of 823946e... iOS and watchOS successfully send data and trigger haptic feedback
 // Tapping the annotation (display title and subtitle)
 - (BOOL)mapView:(MGLMapView *)mapView annotationCanShowCallout:(id <MGLAnnotation>)annotation {
     // Always try to show a callout when an annotation is tapped.
     return YES;
 }
+
+
+
+
+
 
 - (void)startNavigation:(MBRoute *)route {
     self.mapView.userTrackingMode = MGLUserTrackingModeFollowWithCourse;
@@ -108,45 +94,14 @@ static NSString *MBXTempProfileIdentifierAutomobileAvoidingTraffic = @"mapbox/dr
     [self.navigation resume];
 }
 
-
-
-
-
-//- (void)reportPressed {
-//    // reportPressed -> creates annotation on that current location
-//}
-//
-//
-//
-//
-//
-//
-//- (IBAction)yesButtonPressed:(id)sender {
-//    [self.replyLabel setText:@"Sending Yes..."];
-//
-//    self.counter++;
-//    self.counterLabel.text = [NSString stringWithFormat:@"%i",_counter];
-//
-//    //Build message and send
-//    [self packageAndSendMessage:@{@"request":@"Yes",@"counter":[NSString stringWithFormat:@"%i",_counter]}];
-//}
-
-
-
-
-
 /*
-#pragma mark - Navigation
+ #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-
-
-
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
