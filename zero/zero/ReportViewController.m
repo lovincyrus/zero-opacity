@@ -11,62 +11,37 @@
 
 @interface ReportViewController () <WCSessionDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *replyLabel;
-@property (weak, nonatomic) IBOutlet UILabel *counterLabel;
-@property (assign) int counter;
+@property (weak, nonatomic) IBOutlet UILabel *reportLabel;
 
 @end
 
 @implementation ReportViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-
-    // Configuring and activating a session
-    if(WCSession.isSupported){
-        WCSession* session = WCSession.defaultSession;
+    if ([WCSession isSupported]) {
+        WCSession *session = [WCSession defaultSession];
         session.delegate = self;
         [session activateSession];
-        NSLog(@"ReportViewController.m WCSession is supported");
     }
-
-
-    self.counter = 1;
-    self.counterLabel.text = [NSString stringWithFormat:@"%i",_counter];
 }
 
 
 
 
-/**
- 
- Called when the session prepares to stop communicating with the current Apple Watch.
-
-**/
-- (void)sessionDidBecomeInactive:(WCSession *)session {
-    NSLog(@"Session did become Inactive");
-}
-
-
-
-
-
-
-/**
-
- Called after all data from the previous session has been delivered and communication with the Apple Watch has ended.
-
-**/
 - (void)sessionDidDeactivate:(WCSession *)session {
+    // Begin the activation process for the new Apple Watch.
     [[WCSession defaultSession] activateSession];
-
     NSLog(@"Session did deactivate");
 }
 
 
 
 
+<<<<<<< HEAD
 
 /**
  
@@ -166,65 +141,44 @@ activationDidCompleteWithState:(WCSessionActivationState)activationState
     else {
         [self.replyLabel setText:@"Session Not Supported"];
     }
+=======
+- (void)sessionDidBecomeInactive:(WCSession *)session {
+    NSLog(@"Session did become Inative");
+>>>>>>> parent of 823946e... iOS and watchOS successfully send data and trigger haptic feedback
+}
+
+
+
+
+- (void)session:(WCSession *)session activationDidCompleteWithState:(WCSessionActivationState)activationState
+          error:(NSError *)error {
+    NSLog(@"Session did complete with state");
+}
+
+
+
+
+- (void)session:(nonnull WCSession *)session didReceiveApplicationContext:(nonnull NSDictionary<NSString *,id> *)applicationContext {
+    NSString *report = [applicationContext objectForKey:@"report"];
+
+    //Use this to update the UI instantaneously (otherwise, takes a little while)
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.reportLabel setText:[NSString stringWithFormat:@"Label: %@", report]];
+    });
 }
 
 
 
 
 
+/*
+ #pragma mark - Navigation
 
-#pragma mark Button Actions
-- (IBAction)SendMessageButtonPressed:(id)sender {
-    [self.replyLabel setText:@"Sending Message ..."];
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
-    NSDictionary* message = @{@"request":[NSString stringWithFormat:@"Message %d from the Phone",self.counter] ,@"counter":[NSString stringWithFormat:@"%d",self.counter]};
-
-    self.counter++;
-    self.counterLabel.text = [NSString stringWithFormat:@"%i",_counter];
-
-    //Send message
-    [self packageAndSendMessage:message];
-
-}
-
-
-//- (IBAction)sendMessageButtonPressed {
-//    [self.replyLabel setText:@"Sending..."];
-//
-//    self.counter++;
-//    [self setTitle:[NSString stringWithFormat:@"%i",_counter]];
-//
-//    NSDictionary* message = @{@"request":[NSString stringWithFormat:@"Message %d from the Phone",self.counter] ,@"counter":[NSString stringWithFormat:@"%d",self.counter]};
-//
-//    [self packageAndSendMessage:message];
-//    
-//}
-
-
-
-
-- (IBAction)yesButtonPressed:(id)sender {
-    [self.replyLabel setText:@"Sending Yes..."];
-
-    self.counter++;
-    self.counterLabel.text = [NSString stringWithFormat:@"%i",_counter];
-
-    //Build message and send
-    [self packageAndSendMessage:@{@"request":@"Yes",@"counter":[NSString stringWithFormat:@"%i",_counter]}];
-}
-
-
-
-
-- (IBAction)noButtonPressed:(id)sender {
-
-    [self.replyLabel setText:@"Sending No..."];
-
-    self.counter++;
-    self.counterLabel.text = [NSString stringWithFormat:@"%i",_counter];
-
-
-    //Build message and send
-    [self packageAndSendMessage:@{@"request":@"No",@"counter":[NSString stringWithFormat:@"%i",_counter]}];
-}
 @end

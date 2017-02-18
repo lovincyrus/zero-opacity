@@ -11,52 +11,54 @@
 
 
 @interface InterfaceController() <WCSessionDelegate>
-@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *replyLabel;
 
-@property (assign) int counter;
-
-//@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceButton *reportButton;
-//@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *speedLabel;
+// reportBtn
+//@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceButton *reportBtn;
 
 // session
-//@property (strong, nonatomic) WCSession *session;
+@property (strong, nonatomic) WCSession *session;
+
 @end
 
 
 @implementation InterfaceController
 
+-(instancetype)init {
+    self = [super init];
 
-
-- (void)awakeWithContext:(id)context {
-    [super awakeWithContext:context];
-
-    // Configuring and activating a session
-    if(WCSession.isSupported){
-        WCSession* session = WCSession.defaultSession;
-        session.delegate = self;
-        [session activateSession];
-        NSLog(@"InterfaceController.m WCSession is supported");
-
+    // check if a session is supported
+    if (self) {
+        if ([WCSession isSupported]) {
+            self.session = [WCSession defaultSession];
+            self.session.delegate = self;
+            [self.session activateSession];
+        }
     }
-
-    self.counter = 1;
-    [self setTitle:[NSString stringWithFormat:@"%i",_counter]];
+    return self;
 }
 
 
 
 
+// activeationDidCompleteWithState
 - (void)session:(WCSession *)session
 activationDidCompleteWithState:(WCSessionActivationState)activationState
           error:(NSError *)error {
-    NSLog(@"Session did complete with state");
 }
+
+
+
+//
+//- (void)awakeWithContext:context {
+//    [super awakeWithContext:context];
+//    NSLog(@"Passed %@",context);
+//}
 
 
 
 
 - (void)willActivate {
-    // This method is called when watch view controller is about to be visible to user
+// This method is called when watch view controller is about to be visible to user
     [super willActivate];
     NSLog(@"%@ willActivate (HANDS UP)", self);
 }
@@ -73,6 +75,7 @@ activationDidCompleteWithState:(WCSessionActivationState)activationState
 
 
 
+<<<<<<< HEAD
 
 - (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *, id> *)message replyHandler:(void(^)(NSDictionary<NSString *, id> *replyMessage))replyHandler {
     if(message){
@@ -169,25 +172,28 @@ activationDidCompleteWithState:(WCSessionActivationState)activationState
         session.delegate = self;
         [session activateSession];
     }
+=======
+- (IBAction)reportPressed {
+    [self sendReport:@"Report"];
+    NSLog(@"reportPressed");
+>>>>>>> parent of 823946e... iOS and watchOS successfully send data and trigger haptic feedback
 }
 
 
 
-#pragma mark Button Actions
-- (IBAction)sendMessageButtonPressed {
-    [self.replyLabel setText:@"Sending..."];
 
-    self.counter++;
-    [self setTitle:[NSString stringWithFormat:@"%i",_counter]];
+// send report to reportLabel
+-(void)sendReport:(NSString *)report {
+    NSDictionary *applicationDict = @{@"report":report};
+    [self.session updateApplicationContext:applicationDict error:nil];
 
-    NSDictionary* message = @{@"request":[NSString stringWithFormat:@"Message %d from the Phone",self.counter] ,@"counter":[NSString stringWithFormat:@"%d",self.counter]};
-
-    [self packageAndSendMessage:message];
+    NSLog(@"sendReport");
 
 }
 
 
 
+<<<<<<< HEAD
 
 - (IBAction)yesButtonPressed {
     [self.replyLabel setText:@"Sending Yes..."];
@@ -212,4 +218,6 @@ activationDidCompleteWithState:(WCSessionActivationState)activationState
 
 
 
+=======
+>>>>>>> parent of 823946e... iOS and watchOS successfully send data and trigger haptic feedback
 @end
