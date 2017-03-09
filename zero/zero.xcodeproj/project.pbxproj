@@ -10,6 +10,10 @@
 		5713BECFAEDBF3F9FDC6D4EA /* libPods-zero WatchKit Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B87F76B720E84340A1AE556B /* libPods-zero WatchKit Extension.a */; };
 		9F3B946E6AB1606960FF1973 /* Pods_zero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79945AC7BF95CBE4C2580FF /* Pods_zero.framework */; };
 		A43497501E47E1A9007B6774 /* ReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A434974F1E47E1A9007B6774 /* ReportViewController.m */; };
+		A43DCA6E1E71415C00E26BD0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A43DCA6D1E71415C00E26BD0 /* HomeViewController.m */; };
+		A43DCA711E71420A00E26BD0 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A43DCA701E71420A00E26BD0 /* ProfileViewController.m */; };
+		A43DCA731E71428500E26BD0 /* Lock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43DCA721E71428500E26BD0 /* Lock.framework */; };
+		A43DCA751E7142A900E26BD0 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43DCA741E7142A900E26BD0 /* AFNetworking.framework */; };
 		A473CA201E3B334900E7E60C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A473CA1F1E3B334900E7E60C /* Settings.bundle */; };
 		A4C00B451E3C160A009DFA90 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C00B441E3C160A009DFA90 /* PageContentViewController.m */; };
 		A4D5C0C11E5859FC000F4025 /* MapboxNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D5C0C01E5859FC000F4025 /* MapboxNavigation.framework */; };
@@ -96,6 +100,12 @@
 		A4010E931E4EAD7800826CF5 /* MapboxGeocoder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxGeocoder.framework; path = "Pods/../build/Release-iphoneos/MapboxGeocoder.swift/MapboxGeocoder.framework"; sourceTree = "<group>"; };
 		A434974E1E47E1A9007B6774 /* ReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportViewController.h; sourceTree = "<group>"; };
 		A434974F1E47E1A9007B6774 /* ReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportViewController.m; sourceTree = "<group>"; };
+		A43DCA6C1E71415C00E26BD0 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A43DCA6D1E71415C00E26BD0 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		A43DCA6F1E71420A00E26BD0 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		A43DCA701E71420A00E26BD0 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		A43DCA721E71428500E26BD0 /* Lock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lock.framework; path = "Pods/../build/Release-iphoneos/Lock/Lock.framework"; sourceTree = "<group>"; };
+		A43DCA741E7142A900E26BD0 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../../../../Library/Developer/Xcode/DerivedData/zero-bwhzxlhwhtmwyxezlkzjiduxyxji/Build/Products/Debug-iphoneos/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
 		A473CA1F1E3B334900E7E60C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		A4C00B431E3C160A009DFA90 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		A4C00B441E3C160A009DFA90 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
@@ -153,6 +163,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43DCA751E7142A900E26BD0 /* AFNetworking.framework in Frameworks */,
+				A43DCA731E71428500E26BD0 /* Lock.framework in Frameworks */,
 				A4D5C0C11E5859FC000F4025 /* MapboxNavigation.framework in Frameworks */,
 				A4F3AE611E44888800FFC0B9 /* WatchConnectivity.framework in Frameworks */,
 				A4EDA8D61E43121E00C99BF3 /* MapboxDirections.framework in Frameworks */,
@@ -187,6 +199,8 @@
 		9E83DE78C91511C09BD6E4DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A43DCA741E7142A900E26BD0 /* AFNetworking.framework */,
+				A43DCA721E71428500E26BD0 /* Lock.framework */,
 				A4D5C0C01E5859FC000F4025 /* MapboxNavigation.framework */,
 				A4010E931E4EAD7800826CF5 /* MapboxGeocoder.framework */,
 				A4F3AE5F1E4483E600FFC0B9 /* WatchConnectivity.framework */,
@@ -285,6 +299,10 @@
 		A4D644771E38A264001BCA5C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A43DCA6C1E71415C00E26BD0 /* HomeViewController.h */,
+				A43DCA6D1E71415C00E26BD0 /* HomeViewController.m */,
+				A43DCA6F1E71420A00E26BD0 /* ProfileViewController.h */,
+				A43DCA701E71420A00E26BD0 /* ProfileViewController.m */,
 				A434974E1E47E1A9007B6774 /* ReportViewController.h */,
 				A434974F1E47E1A9007B6774 /* ReportViewController.m */,
 				A4D644831E39D70B001BCA5C /* MapViewController.h */,
@@ -579,12 +597,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D6443C1E38A1DC001BCA5C /* ViewController.m in Sources */,
+				A43DCA711E71420A00E26BD0 /* ProfileViewController.m in Sources */,
 				A4D6447B1E38A2D4001BCA5C /* zero.m in Sources */,
 				A4C00B451E3C160A009DFA90 /* PageContentViewController.m in Sources */,
 				A43497501E47E1A9007B6774 /* ReportViewController.m in Sources */,
 				A4D644391E38A1DC001BCA5C /* AppDelegate.m in Sources */,
 				A4D644851E39D70B001BCA5C /* MapViewController.m in Sources */,
 				A4D644361E38A1DC001BCA5C /* main.m in Sources */,
+				A43DCA6E1E71415C00E26BD0 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -833,6 +853,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/MapboxNavigation.swift",
+					"$(PROJECT_DIR)/build/Release-iphoneos/Lock",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -861,6 +882,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/MapboxNavigation.swift",
+					"$(PROJECT_DIR)/build/Release-iphoneos/Lock",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

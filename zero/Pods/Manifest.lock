@@ -1,12 +1,42 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Lock (1.28.1):
+    - Lock/Core (= 1.28.1)
+    - Lock/UI (= 1.28.1)
+    - Lock/WebView (= 1.28.1)
+  - Lock/Core (1.28.1):
+    - AFNetworking (~> 3.0)
+  - Lock/CoreUI (1.28.1):
+    - Lock/Core
+    - Masonry (~> 0.6)
+  - Lock/UI (1.28.1):
+    - Lock/CoreUI
+  - Lock/WebView (1.28.1):
+    - Lock/CoreUI
   - Mapbox-iOS-SDK-symbols (3.4.0-symbols)
   - MapboxDirections.swift (0.6.0):
     - Polyline (~> 4.0.0)
   - MapboxNavigation.swift (0.0.3):
     - MapboxDirections.swift
+  - Masonry (0.6.4)
   - Polyline (4.0.0)
 
 DEPENDENCIES:
+  - Lock (~> 1.28)
   - Mapbox-iOS-SDK-symbols (from `https://raw.githubusercontent.com/mapbox/mapbox-gl-native/ios-v3.4.0/platform/ios/Mapbox-iOS-SDK-symbols.podspec`)
   - MapboxDirections.swift (from `https://github.com/mapbox/MapboxDirections.swift.git`, branch `swift3`)
   - MapboxNavigation.swift (from `https://github.com/mapbox/MapboxNavigation.swift.git`, tag `v0.0.4`)
@@ -30,11 +60,14 @@ CHECKOUT OPTIONS:
     :tag: v0.0.4
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Lock: 75874afed8380a46459dfb643cb93b3b6ffa59d9
   Mapbox-iOS-SDK-symbols: bd2654585472ca25fe89e9adfc11ef5550020f84
   MapboxDirections.swift: 4acd753d0079bae4f2fae2b2cbda98922909de09
   MapboxNavigation.swift: 8759dbdcd54a5985801a7ac7d87a84846ee66dd4
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   Polyline: c6de7430bf6ff0bfff1f087343597b83b38fdb69
 
-PODFILE CHECKSUM: 3e3cb2564e220c91806a1b57c0980b79a93e1861
+PODFILE CHECKSUM: f13831811fc3376af8029b7e60e3fe95ac4bcb43
 
 COCOAPODS: 1.2.0

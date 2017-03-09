@@ -33,6 +33,7 @@
     [super viewDidLoad];
 
     self.titleLabel.text = self.titleText;
+    self.view.backgroundColor = [UIColor clearColor];
 }
 
 - (void)didReceiveMemoryWarning {
