@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -101,7 +101,7 @@
 		0BD7667A96FDE2632DFA38FBFEDE63E2 /* Pods-zero-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-zero-frameworks.sh"; sourceTree = "<group>"; };
 		1018178D489F0B6EE6EBBA883A1D6E51 /* MapboxDirections.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxDirections.swift-umbrella.h"; sourceTree = "<group>"; };
 		1098FDA52964DC0C2BCA8A364AB4D8AC /* Pods-zero-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-zero-acknowledgements.markdown"; sourceTree = "<group>"; };
-		131C5606506C2C22B347C9A4E85CE8AD /* Polyline.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Polyline.modulemap; sourceTree = "<group>"; };
+		131C5606506C2C22B347C9A4E85CE8AD /* Polyline.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Polyline.modulemap; sourceTree = "<group>"; };
 		17E1000B9307EC67B08CD78142831754 /* Pods-zero WatchKit Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-zero WatchKit Extension-frameworks.sh"; sourceTree = "<group>"; };
 		207434C308FF38A10552B2830C3E8888 /* Pods-zero WatchKit App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-zero WatchKit App-resources.sh"; sourceTree = "<group>"; };
 		2A8FACB563795AF3D7A9DD410C163468 /* MapboxDirections.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MapboxDirections.h; path = MapboxDirections/MapboxDirections.h; sourceTree = "<group>"; };
@@ -112,24 +112,24 @@
 		3B24CF1ED723DB77173704CDC6E257D6 /* MapboxNavigation.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxNavigation.swift.xcconfig; sourceTree = "<group>"; };
 		451F8031FCE5996B106409F006863D90 /* MBRouteOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRouteOptions.swift; path = MapboxDirections/MBRouteOptions.swift; sourceTree = "<group>"; };
 		507FC18AF59E5A92B3E2783DF3D54552 /* Pods-zero WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-zero WatchKit App-dummy.m"; sourceTree = "<group>"; };
-		5085A2D297EEF58AE15C0AEAFBD73FD4 /* MapboxDirections.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MapboxDirections.swift.modulemap; sourceTree = "<group>"; };
+		5085A2D297EEF58AE15C0AEAFBD73FD4 /* MapboxDirections.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MapboxDirections.swift.modulemap; sourceTree = "<group>"; };
 		5219ED220A4BCE9D855F445CF7ECB3D9 /* MapboxNavigation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MapboxNavigation.h; path = MapboxNavigation/MapboxNavigation.h; sourceTree = "<group>"; };
 		52568602D3970415C54F7E91062A4BF0 /* MBLaneIndication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBLaneIndication.h; path = MapboxDirections/MBLaneIndication.h; sourceTree = "<group>"; };
 		538B13B7D2559B0A73C4FEBF6231668F /* Polyline-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Polyline-dummy.m"; sourceTree = "<group>"; };
 		53D443E95A81573B34D5941737F8DCC0 /* MapboxDirections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxDirections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F5399DB288D322AC6DE4E97B8435E0 /* RouteProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteProgress.swift; path = MapboxNavigation/RouteProgress.swift; sourceTree = "<group>"; };
-		5EC9989EC783C7736C32A3335BE2CD59 /* MapboxNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EC9989EC783C7736C32A3335BE2CD59 /* MapboxNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MapboxNavigation.framework; path = MapboxNavigation.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9B15195C82931704D8B1721A7B7C2D /* Pods-zero-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-zero-dummy.m"; sourceTree = "<group>"; };
 		6002D59348AAEB7D98A292A96F0060D8 /* MapboxNavigation.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxNavigation.swift-umbrella.h"; sourceTree = "<group>"; };
 		60B985F41128315B47E14E853B0D9B4A /* Pods-zero WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-zero WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		620204E35BC6D2F987B215163334835A /* Pods-zero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-zero.debug.xcconfig"; sourceTree = "<group>"; };
-		675C5F849732894F1A80E03AEE4B4907 /* MapboxDirections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxDirections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		675C5F849732894F1A80E03AEE4B4907 /* MapboxDirections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MapboxDirections.framework; path = MapboxDirections.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69CD49F9BB678B5A5E3A49FF41D2BD62 /* Pods-zero-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-zero-acknowledgements.plist"; sourceTree = "<group>"; };
 		7150CEF029D46CAC35215DEAFA379DA0 /* Pods-zero-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-zero-umbrella.h"; sourceTree = "<group>"; };
 		84E6CC0136CFAD09DBAF5A90E526351E /* MapboxDirections.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxDirections.swift.xcconfig; sourceTree = "<group>"; };
 		8557E8409FD3FB4BA8477EC13AF3374C /* Pods-zero WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-zero WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		935DE3375493945B14B86C104A5C1821 /* Pods-zero WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-zero WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93F88D5972ACA1298417F44740DA4D2E /* Pods-zero WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-zero WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		95F6CD28DD087EB0161B6394F0F943E3 /* Polyline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polyline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		968CF8805851A3D479E744A6A1B6AFA3 /* Pods-zero WatchKit App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-zero WatchKit App-frameworks.sh"; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 		B50EAC48CBFA2F30F587474D01681AEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B5A6021EBADE2420EE38B37613CF1882 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0E155CEACF6EE203EDDBE1EAB7292C4 /* Polyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Polyline.h; path = Polyline/Polyline.h; sourceTree = "<group>"; };
-		C318CB90F7B1D86A03FC6D125D826876 /* MapboxNavigation.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MapboxNavigation.swift.modulemap; sourceTree = "<group>"; };
+		C318CB90F7B1D86A03FC6D125D826876 /* MapboxNavigation.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MapboxNavigation.swift.modulemap; sourceTree = "<group>"; };
 		C622F80CD03119FBD4E6B2FBC40101C2 /* MBRouteLeg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRouteLeg.swift; path = MapboxDirections/MBRouteLeg.swift; sourceTree = "<group>"; };
 		C67ED21D79B25D1F3DE733BA68D31D38 /* MBLane.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBLane.swift; path = MapboxDirections/MBLane.swift; sourceTree = "<group>"; };
 		C8E0A97CC4FDB628C0EF0D367834DD26 /* MBRouteController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBRouteController.h; path = MapboxNavigation/MBRouteController.h; sourceTree = "<group>"; };
@@ -153,14 +153,14 @@
 		D39590D5942A68515EB8581E9648BCC8 /* Pods-zero WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-zero WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
 		D43C47E38F54914AD139B5142AEA0CA3 /* MBLaneIndication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBLaneIndication.swift; path = MapboxDirections/MBLaneIndication.swift; sourceTree = "<group>"; };
 		D815D7B218FD19B58A6424B7AF4021BB /* Pods-zero WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-zero WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
-		DA5E8C38FA40BC28FCCE4ABDB5FDACE1 /* Pods_zero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE1CBAB21A3B1D73323B627F12D0E090 /* libPods-zero WatchKit Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-zero WatchKit Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA5E8C38FA40BC28FCCE4ABDB5FDACE1 /* Pods_zero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_zero.framework; path = "Pods-zero.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE1CBAB21A3B1D73323B627F12D0E090 /* libPods-zero WatchKit Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-zero WatchKit Extension.a"; path = "libPods-zero WatchKit Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0052F8596E1D974F64C74D6B2E3A7DB /* MBRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRoute.swift; path = MapboxDirections/MBRoute.swift; sourceTree = "<group>"; };
 		E1F1F26E0502B4CEDF4FA72FDBC240CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E570E94B5D5406C701EEC242D0F52BD6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E80A86822D6D79322ED3B1ADF187F9F9 /* libPods-zero WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-zero WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8841ECD5C45AFBF1B095ED95F0C2611 /* Polyline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polyline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA21B0ECF01EB4EB73A46DA172AAEF47 /* Pods-zero.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-zero.modulemap"; sourceTree = "<group>"; };
+		E80A86822D6D79322ED3B1ADF187F9F9 /* libPods-zero WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-zero WatchKit App.a"; path = "libPods-zero WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8841ECD5C45AFBF1B095ED95F0C2611 /* Polyline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Polyline.framework; path = Polyline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA21B0ECF01EB4EB73A46DA172AAEF47 /* Pods-zero.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-zero.modulemap"; sourceTree = "<group>"; };
 		ECDCD999D785E7C5EBA8B3441530C17A /* Pods-zero-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-zero-resources.sh"; sourceTree = "<group>"; };
 		EFEFF31ED764D2C36E23539CBAD31055 /* MapboxDirections.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MapboxDirections.swift-dummy.m"; sourceTree = "<group>"; };
 		F292811A2F6AAB1EAC1353DCE2384D2C /* Polyline-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Polyline-prefix.pch"; sourceTree = "<group>"; };
@@ -271,6 +271,7 @@
 				2EFF982D743A1B4DD76B851A5AD34F97 /* MBWaypoint.swift */,
 				07031FA1779FBF014E7CE99B7E8195CD /* Support Files */,
 			);
+			name = MapboxDirections.swift;
 			path = MapboxDirections.swift;
 			sourceTree = "<group>";
 		};
@@ -304,6 +305,7 @@
 			children = (
 				648788ED05BFE8EB5BDC1354B88BD618 /* Frameworks */,
 			);
+			name = "Mapbox-iOS-SDK-symbols";
 			path = "Mapbox-iOS-SDK-symbols";
 			sourceTree = "<group>";
 		};
@@ -340,6 +342,7 @@
 				56F5399DB288D322AC6DE4E97B8435E0 /* RouteProgress.swift */,
 				7E21205F42FFCC96D69B271EE0EE40CC /* Support Files */,
 			);
+			name = MapboxNavigation.swift;
 			path = MapboxNavigation.swift;
 			sourceTree = "<group>";
 		};
@@ -389,6 +392,7 @@
 				0AF71AB6C3BC870589BE880A52BDD63F /* Polyline.swift */,
 				8F191C7DF00FFF0F96064B4ECE404257 /* Support Files */,
 			);
+			name = Polyline;
 			path = Polyline;
 			sourceTree = "<group>";
 		};
@@ -978,7 +982,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MapboxNavigation.swift/MapboxNavigation.swift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MapboxNavigation.swift/Info.plist";
@@ -1142,7 +1145,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MapboxNavigation.swift/MapboxNavigation.swift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MapboxNavigation.swift/Info.plist";

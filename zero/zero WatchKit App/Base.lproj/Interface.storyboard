@@ -17,7 +17,7 @@
                         <group width="1" height="49" alignment="left" id="a2A-ls-Cgn">
                             <items>
                                 <button width="1" height="58" alignment="left" title="Send Message" id="dLa-pn-0zw">
-                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <connections>
                                         <action selector="sendMessageButtonPressed" destination="AgC-eL-Hgc" id="AoZ-oS-UW5"/>
                                     </connections>
@@ -42,7 +42,7 @@
                         </group>
                         <group width="156" height="46" alignment="left" id="mny-IO-jXG">
                             <items>
-                                <label width="156" height="160" alignment="left" text="Reply" textAlignment="center" id="d3J-OC-gGJ">
+                                <label width="156" height="160" alignment="left" text="Reply" textAlignment="center" numberOfLines="3" id="d3J-OC-gGJ">
                                     <color key="textColor" red="1" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </label>
                             </items>

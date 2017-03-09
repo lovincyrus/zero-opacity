@@ -6,7 +6,7 @@
 
 /********************************/
 // CS63A - Winter 2017
-// HW1: Milestone 1
+// HW2: Milestone 2
 // Student Name: Cyrus Goh
 // SID: 20186628
 /********************************/
@@ -23,6 +23,13 @@
 @import Mapbox;
 @import MapboxNavigation;
 @import MapboxDirections;
+
+
+@interface MyCustomPointAnnotation : MGLPointAnnotation
+@end
+
+@implementation MyCustomPointAnnotation
+@end
 
 @interface MapViewController () <MGLMapViewDelegate>
 @property (strong, nonatomic) IBOutlet MGLMapView *mapView;
@@ -41,24 +48,9 @@ static NSString *MBXTempProfileIdentifierAutomobileAvoidingTraffic = @"mapbox/dr
     [super viewDidLoad];
     NSLog(@"viewDidLoad MapVC");
 
-    //    [self.mapView setStyleURL:[MGLStyle streetsStyleURLWithVersion:dark-v9]];
+    // Needs to be here to track location when started
     self.mapView.userTrackingMode = MGLUserTrackingModeFollow;
-
-    // set the map view's delegate property
     self.mapView.delegate = self;
-
-    // create annotation and assign it to local variable point
-    //    MGLPointAnnotation *point = [[MGLPointAnnotation alloc] init];
-
-    // give the point annotation a coordinate
-    //point.coordinate = CLLocationCoordinate2DMake(37.369168, -122.038412);
-    //    point.title = @"Chick-fil-A";
-    //    point.subtitle = @"550 W El Camino Real, Sunnyvale, CA 94087";
-
-    // add the annotation to the map view
-    //    [self.mapView addAnnotation:point];
-
-
 }
 
 
@@ -76,7 +68,6 @@ static NSString *MBXTempProfileIdentifierAutomobileAvoidingTraffic = @"mapbox/dr
 
 
 
-// mapview
 // Tapping the annotation (display title and subtitle)
 - (BOOL)mapView:(MGLMapView *)mapView annotationCanShowCallout:(id <MGLAnnotation>)annotation {
     // Always try to show a callout when an annotation is tapped.
@@ -93,6 +84,64 @@ static NSString *MBXTempProfileIdentifierAutomobileAvoidingTraffic = @"mapbox/dr
     self.navigation = [[MBRouteController alloc] initWithRoute:route];
     [self.navigation resume];
 }
+
+
+
+
+// Return a random floating-point value between 0 and 1
+//-(CGFloat)randomValueBetween0And1{
+//    return (float)rand()/RAND_MAX;
+//}
+
+
+
+
+// Generates a random point of origin within the self.canvas' bounds
+-(CGPoint)randomPatchOriginLocation{
+    CGPoint origin;
+//    origin.x = self.canvas.bounds.size.width*[self randomValueBetween0And1];
+//    origin.y = self.canvas.bounds.size.height*[self randomValueBetween0And1];
+    return origin;
+}
+
+
+
+- (IBAction)addMarker:(id)sender {
+    NSLog(@"addMarker pressed");
+
+    MGLMapView *mapView = [[MGLMapView alloc] initWithFrame:self.view.bounds
+                                                   styleURL: [NSURL URLWithString:@"mapbox://styles/mapbox/dark-v9"]];
+
+    mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    mapView.delegate = self;
+
+    MGLPointAnnotation *point0 = [[MGLPointAnnotation alloc] init];
+    MGLPointAnnotation *point1 = [[MGLPointAnnotation alloc] init];
+    MyCustomPointAnnotation *point2 = [[MyCustomPointAnnotation alloc] init];
+
+    point0.coordinate = CLLocationCoordinate2DMake(37.369168, -122.038412);
+    point0.title = @"Chick-fil-A";
+    point0.subtitle = @"550 W El Camino Real, Sunnyvale, CA 94087";
+
+    point1.coordinate = CLLocationCoordinate2DMake(37.328669, -122.02084809999997);
+    point1.title = @"Sunnyvale";
+    point1.subtitle = @"I said Sunnyvale!";
+
+    point2.coordinate = CLLocationCoordinate2DMake(36.4623,-116.8656);
+    point2.title = @"Stovepipe Wells";
+    point2.subtitle = @"Testing";
+
+    NSArray *myPlaces = @[point0, point1, point2];
+
+    [self.view addSubview:mapView];
+
+    // add the annotation to the map view
+    [mapView addAnnotations:myPlaces];
+}
+
+
+//self.mapView.userTrackingMode = MGLUserTrackingModeFollow;
+//self.mapView.delegate = self;
 
 /*
  #pragma mark - Navigation

@@ -1,3 +1,10 @@
+/********************************/
+// CS63A - Winter 2017
+// HW2: Milestone 2
+// Student Name: Cyrus Goh
+// SID: 20186628
+/********************************/
+
 //
 //  InterfaceController.h
 //  zero WatchKit Extension

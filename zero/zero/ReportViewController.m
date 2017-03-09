@@ -1,3 +1,10 @@
+/********************************/
+// CS63A - Winter 2017
+// HW2: Milestone 2
+// Student Name: Cyrus Goh
+// SID: 20186628
+/********************************/
+
 //
 //  ReportViewController.m
 //  zero
@@ -22,7 +29,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-
     // Configuring and activating a session
     if(WCSession.isSupported){
         WCSession* session = WCSession.defaultSession;
@@ -30,7 +36,6 @@
         [session activateSession];
         NSLog(@"ReportViewController.m WCSession is supported");
     }
-
 
     self.counter = 1;
     self.counterLabel.text = [NSString stringWithFormat:@"%i",_counter];
@@ -101,11 +106,11 @@ activationDidCompleteWithState:(WCSessionActivationState)activationState
 
 
 /**
- Standard WatchKit delegate
- */
--(void)sessionWatchStateDidChange:(nonnull WCSession *)session
-{
 
+ Standard WatchKit delegate
+ 
+ */
+-(void)sessionWatchStateDidChange:(nonnull WCSession *)session {
     if(WCSession.isSupported){
         WCSession* session = WCSession.defaultSession;
         session.delegate = self;
@@ -186,17 +191,6 @@ activationDidCompleteWithState:(WCSessionActivationState)activationState
 }
 
 
-//- (IBAction)sendMessageButtonPressed {
-//    [self.replyLabel setText:@"Sending..."];
-//
-//    self.counter++;
-//    [self setTitle:[NSString stringWithFormat:@"%i",_counter]];
-//
-//    NSDictionary* message = @{@"request":[NSString stringWithFormat:@"Message %d from the Phone",self.counter] ,@"counter":[NSString stringWithFormat:@"%d",self.counter]};
-//
-//    [self packageAndSendMessage:message];
-//
-//}
 
 
 
@@ -210,6 +204,8 @@ activationDidCompleteWithState:(WCSessionActivationState)activationState
     //Build message and send
     [self packageAndSendMessage:@{@"request":@"Yes",@"counter":[NSString stringWithFormat:@"%i",_counter]}];
 }
+
+
 
 
 

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0C207CC4D4E3671EB5C169102AF442A91439FD80",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0C207CC4D4E3671EB5C169102AF442A91439FD80" : 9223372036854775807,
+    "5887DF4B22A3FA48278D8B436F424BFCE8CAB2C6" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B57F5901-C60F-4560-8F90-A1514CE6E7FD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0C207CC4D4E3671EB5C169102AF442A91439FD80" : "zero-opacity\/",
+    "5887DF4B22A3FA48278D8B436F424BFCE8CAB2C6" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "zero",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "zero\/zero.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lovincyrus\/zero-opacity.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0C207CC4D4E3671EB5C169102AF442A91439FD80"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/imrenagi\/hackuber.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5887DF4B22A3FA48278D8B436F424BFCE8CAB2C6"
+    }
+  ]
+}
